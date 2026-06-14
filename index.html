@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mecha Chameleon | Cybernetic Evolution</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google Fonts (Orbitron for Gaming Style, Inter for text) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        .font-gaming { font-family: 'Orbitron', sans-serif; }
+        .font-sans { font-family: 'Inter', sans-serif; }
+        .neon-glow {
+            box-shadow: 0 0 15px rgba(34, 197, 94, 0.5);
+        }
+        .neon-text {
+            text-shadow: 0 0 10px rgba(34, 197, 94, 0.6);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased overflow-x-hidden selection:bg-green-500 selection:text-black">
+
+    <!-- Header / Navbar -->
+    <header class="border-b border-slate-800 bg-slate-950/80 backdrop-blur-md fixed top-0 w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <!-- Logo Space -->
+                <div class="w-10 h-10 bg-gradient-to-tr from-green-500 to-emerald-400 rounded-lg flex items-center justify-center font-gaming font-black text-black text-xl shadow-[0_0_15px_rgba(34,197,94,0.4)]">
+                    MC
+                </div>
+                <span class="font-gaming text-xl font-bold tracking-wider bg-gradient-to-r from-white to-slate-400 bg-clip-text text-transparent">MECHA <span class="text-green-400">CHAMELEON</span></span>
+            </div>
+            <nav class="hidden md:flex items-center gap-8 font-gaming text-sm tracking-widest text-slate-400">
+                <a href="#features" class="hover:text-green-400 transition-colors">FEATURES</a>
+                <a href="#gameplay" class="hover:text-green-400 transition-colors">GAMEPLAY</a>
+                <a href="#download" class="hover:text-green-400 transition-colors text-green-400 border border-green-500/30 px-4 py-1.5 rounded-md bg-green-500/10">PLAY NOW</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-24 md:pt-48 md:pb-36 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-green-950/30 via-slate-950 to-slate-950 overflow-hidden">
+        <!-- Grid overlay for tech look -->
+        <div class="absolute inset-0 bg-[linear-gradient(to_right,#0f172a_1px,transparent_1px),linear-gradient(to_bottom,#0f172a_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-60"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                
+                <!-- Left Content -->
+                <div class="space-y-6 text-center md:text-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-orange-500/30 bg-orange-500/10 text-orange-400 font-gaming text-xs tracking-widest uppercase animate-pulse">
+                        <span class="w-2 h-2 rounded-full bg-orange-500"></span> Version 1.4.2 Update
+                    </div>
+                    <h1 class="font-gaming text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight">
+                        ADAPT. <span class="text-green-400 neon-text">CAMOUFLAGE.</span> DESTROY.
+                    </h1>
+                    <p class="text-slate-400 text-lg max-w-xl mx-auto md:mx-0 leading-relaxed">
+                        Control the ultimate cybernetic predator. Blend into the neon environment, upgrade your mecha-armaments, and execute lethal ambushes in this high-octane action RPG.
+                    </p>
+                    
+                    <!-- Main CTA Area / Download Section Anchor -->
+                    <div class="pt-4 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+                        <a href="#download" class="font-gaming tracking-wider bg-green-500 hover:bg-green-400 text-slate-950 font-black px-8 py-4 rounded-xl transition-all transform hover:-translate-y-0.5 shadow-[0_4px_20px_rgba(34,197,94,0.4)] flex items-center justify-center gap-3">
+                            DOWNLOAD FREE
+                        </a>
+                        <a href="#features" class="font-gaming tracking-wider bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-700 px-8 py-4 rounded-xl transition-all flex items-center justify-center">
+                            SEE FEATURES
+                        </a>
+                    </div>
+
+                    <!-- Micro Social Proof -->
+                    <div class="pt-6 flex items-center justify-center md:justify-start gap-6 text-slate-500 text-xs tracking-wider uppercase font-gaming">
+                        <div>⭐⭐⭐⭐⭐ 4.9 App Store</div>
+                        <div class="w-1 h-1 rounded-full bg-slate-700"></div>
+                        <div>1M+ Downloads</div>
+                    </div>
+                </div>
+
+                <!-- Right Content (Mockup/Image Placeholder) -->
+                <div class="relative flex justify-center">
+                    <!-- Glow Effect behind image -->
+                    <div class="absolute w-72 h-72 bg-green-500/20 rounded-full blur-3xl top-10 left-10"></div>
+                    <div class="absolute w-72 h-72 bg-orange-500/10 rounded-full blur-3xl bottom-10 right-10"></div>
+                    
+                    <!-- Main Game Artwork Showcase -->
+                    <div class="relative w-full max-w-[380px] aspect-[9/16] bg-slate-900 border-2 border-green-500/30 rounded-[2.5rem] p-3 shadow-2xl overflow-hidden group hover:border-green-400 transition-colors">
+                        <div class="absolute inset-x-0 top-0 h-4 bg-slate-900 z-20 flex justify-center"><div class="w-24 h-4 bg-black rounded-b-xl"></div></div>
+                        <div class="w-full h-full bg-gradient-to-b from-slate-800 to-slate-950 rounded-[2rem] relative overflow-hidden flex flex-col justify-between p-6 text-center">
+                            
+                            <!-- Game UI Simulation -->
+                            <div class="pt-6 flex justify-between items-center text-xs text-green-400 font-gaming">
+                                <span>HP: 100%</span>
+                                <span class="text-orange-400 font-bold">STEALTH ACTIVE</span>
+                            </div>
+                            
+                            <!-- Inside Phone Placeholder Graphics -->
+                            <div class="my-auto space-y-4">
+                                <!-- replace with a cool chameleon/robot png -->
+                                <div class="w-32 h-32 mx-auto bg-gradient-to-br from-green-500/20 to-orange-500/20 rounded-full border border-green-500/40 flex items-center justify-center text-5xl animate-bounce">
+                                    🤖
+                                </div>
+                                <div class="font-gaming text-lg font-bold tracking-widest text-white">MECHA CHAMELEON</div>
+                                <div class="w-full bg-slate-950/80 p-2 rounded border border-slate-800 text-[10px] text-slate-400">
+                                    Press Download below to trigger safe installation.
+                                </div>
+                            </div>
+
+                            <div class="w-full bg-green-500 h-1.5 rounded-full overflow-hidden">
+                                <div class="bg-white w-2/3 h-full animate-pulse"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Separation Line -->
+    <hr class="border-slate-900">
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="font-gaming text-3xl sm:text-4xl font-bold text-white mb-4">GAME FEATURES</h2>
+                <p class="text-slate-400">Experience next-gen mobile mechanics tailored for stealth and combat enthusiasts.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-gradient-to-b from-slate-900 to-slate-950 p-8 rounded-2xl border border-slate-800 hover:border-green-500/40 transition-all group">
+                    <div class="w-12 h-12 bg-green-500/10 text-green-400 border border-green-500/20 rounded-xl flex items-center justify-center text-xl font-bold mb-6 font-gaming group-hover:bg-green-500 group-hover:text-black transition-all">01</div>
+                    <h3 class="font-gaming text-lg font-bold text-white mb-2">Dynamic Camouflage</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Adapt your skin's nano-particles to mimic any surface, turning invisible to enemy radars and heat sensors.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-gradient-to-b from-slate-900 to-slate-950 p-8 rounded-2xl border border-slate-800 hover:border-orange-500/40 transition-all group">
+                    <div class="w-12 h-12 bg-orange-500/10 text-orange-400 border border-orange-500/20 rounded-xl flex items-center justify-center text-xl font-bold mb-6 font-gaming group-hover:bg-orange-500 group-hover:text-black transition-all">02</div>
+                    <h3 class="font-gaming text-lg font-bold text-white mb-2">Cyber Weaponry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Equip plasma tongues, laser claws, and homing micro-missiles to eliminate targets with absolute precision.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-gradient-to-b from-slate-900 to-slate-950 p-8 rounded-2xl border border-slate-800 hover:border-green-500/40 transition-all group">
+                    <div class="w-12 h-12 bg-green-500/10 text-green-400 border border-green-500/20 rounded-xl flex items-center justify-center text-xl font-bold mb-6 font-gaming group-hover:bg-green-500 group-hover:text-black transition-all">03</div>
+                    <h3 class="font-gaming text-lg font-bold text-white mb-2">Massive Boss Runs</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Infiltrate gargantuan mecha-facilities and take down giant mechanical guardians in tactical boss fights.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download / Conversion Action Section -->
+    <section id="download" class="py-24 bg-gradient-to-b from-slate-950 to-slate-900 relative">
+        <div class="absolute inset-0 bg-green-500/[0.02] mix-blend-overlay"></div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            
+            <div class="bg-slate-900/60 border border-slate-800 p-8 sm:p-12 rounded-3xl backdrop-blur-sm shadow-xl space-y-8">
+                <div class="space-y-3">
+                    <h2 class="font-gaming text-3xl sm:text-5xl font-black tracking-wide text-white">READY TO EVOLVE?</h2>
+                    <p class="text-slate-400 max-w-lg mx-auto text-sm sm:text-base">Select your operational system platform below to start downloading the game package setup.</p>
+                </div>
+
+                <!-- DOWNLOAD BUTTONS SYSTEM -->
+                <div class="grid sm:grid-cols-2 gap-4 max-w-md mx-auto pt-4">
+                    
+                    <!-- iOS Button (If you are doing Content Locking, put your link inside the href) -->
+                    <a href="YOUR_IOS_CPA_OR_DIRECT_LINK_HERE" class="flex items-center justify-center gap-3 bg-slate-950 hover:bg-slate-900 border border-slate-700 hover:border-green-400 transition-all p-4 rounded-xl font-gaming tracking-wider text-sm group">
+                        <!-- Apple SVG Icon -->
+                        <svg class="w-5 h-5 fill-current text-white group-hover:text-green-400 transition-colors" viewBox="0 0 24 24">
+                            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.17c.66-.81 1.11-1.93.99-3.06-1 .04-2.21.67-2.93 1.49-.62.69-1.16 1.84-1.01 2.96 1.12.09 2.27-.58 2.95-1.39z"/>
+                        </svg>
+                        <div class="text-left">
+                            <span class="block text-[10px] text-slate-500 font-sans tracking-none">Download on the</span>
+                            <span class="text-base font-bold">App Store</span>
+                        </div>
+                    </a>
+
+                    <!-- Android Button -->
+                    <a href="YOUR_ANDROID_CPA_OR_DIRECT_LINK_HERE" class="flex items-center justify-center gap-3 bg-slate-950 hover:bg-slate-900 border border-slate-700 hover:border-orange-400 transition-all p-4 rounded-xl font-gaming tracking-wider text-sm group">
+                        <!-- Google Play Icon -->
+                        <svg class="w-5 h-5 fill-current text-white group-hover:text-orange-400 transition-colors" viewBox="0 0 24 24">
+                            <path d="M5,3.14L15.3,13.43L5,23.73C4.54,23.46 4.24,22.95 4.24,22.29V4.59C4.24,3.93 4.54,3.41 5,3.14M17.16,11.56L20.81,13.66C21.43,14.03 21.43,14.93 20.81,15.3L17.16,17.41L15.94,14.07L17.16,11.56M5.7,2.5L16.5,8.74L15.3,11.16L5.7,1.56C5.7,1.55 5.7,1.55 5.7,1.55M5.7,25.41C5.7,25.41 5.7,25.41 5.7,25.4C5.7,23.95 15.3,13.56 15.3,13.56L16.5,15.94L5.7,22.18C5.7,22.18 5.7,22.18 5.7,22.18Z"/>
+                        </svg>
+                        <div class="text-left">
+                            <span class="block text-[10px] text-slate-500 font-sans tracking-none">Get it on</span>
+                            <span class="text-base font-bold">Google Play</span>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- Requirements note to keep it looking official -->
+                <div class="text-xs text-slate-600 font-mono pt-4">
+                    File Size: ~142MB | Requires iOS 13.0+ or Android 9.0+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 py-8 border-t border-slate-900 text-center text-slate-600 text-xs font-mono">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>© 2026 Mecha Chameleon Project. Developed for Ultimate Mobile Action. All Rights Reserved.</p>
+            <div class="flex justify-center gap-4 mt-2">
+                <a href="#" class="hover:text-slate-400">Privacy Policy</a>
+                <span>•</span>
+                <a href="#" class="hover:text-slate-400">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
