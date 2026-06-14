@@ -6,23 +6,24 @@
     <title>Meccha Chameleon | Official Mobile Download</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- Google Fonts (Fredoka for playful gaming style, Inter for text) -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     
+    <!-- OGAds Script Integration inside <head> -->
+    <script type="text/javascript" id="ogjs" src="https://appsave.store/cl/js/pqrwn2"></script>
+
     <style>
         .font-playful { font-family: 'Fredoka', sans-serif; }
         .font-sans { font-family: 'Inter', sans-serif; }
         
-        /* Graffiti Rainbow Text Effect from the image logo */
         .graffiti-text {
             background: linear-gradient(to right, #ef4444, #f97316, #eab308, #22c55e, #3b82f6, #a855f7, #ec4899);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
-        /* Brick wall pattern approximation using CSS for rapid loading */
         .brick-pattern {
             background-color: #0f172a;
             background-image: 
@@ -32,107 +33,79 @@
                 linear-gradient(155deg, #1e293b 23px, transparent 23px);
             background-size: 58px 58px;
             background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
-            opacity: 0.15;
+            opacity: 0.12;
         }
     </style>
 </head>
 <body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-yellow-400 selection:text-black">
 
-    <!-- Top Bar replicating Steam / Premium feel -->
-    <header class="bg-slate-950/90 border-b border-slate-800 sticky top-0 z-50 backdrop-blur-md">
+    <!-- Header -->
+    <header class="bg-slate-950/90 border-b border-slate-800 sticky top-0 z-40 backdrop-blur-md">
         <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
             <div class="flex items-center gap-2">
-                <div class="w-8 h-8 rounded-full bg-gradient-to-tr from-indigo-500 to-pink-500 flex items-center justify-center font-playful font-bold text-white text-sm">
-                    MC
-                </div>
+                <div class="w-8 h-8 rounded-full bg-gradient-to-tr from-indigo-500 to-pink-500 flex items-center justify-center font-playful font-bold text-white text-sm">MC</div>
                 <span class="font-playful text-lg font-bold tracking-wide text-white">Meccha <span class="graffiti-text">Chameleon</span></span>
             </div>
-            <a href="#download" class="font-playful bg-blue-600 hover:bg-blue-500 text-white px-5 py-2 rounded-full text-sm shadow-md transition-all transform hover:scale-105">
+            <button onclick="openVerificationModal()" class="font-playful bg-blue-600 hover:bg-blue-500 text-white px-5 py-2 rounded-full text-sm shadow-md cursor-pointer">
                 GET GAME
-            </a>
+            </button>
         </div>
     </header>
 
     <!-- Main Hero Section -->
     <section class="relative pt-12 pb-20 overflow-hidden">
-        <!-- Brick texture layers to simulate image.png background -->
         <div class="absolute inset-0 brick-pattern pointer-events-none"></div>
-        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-slate-900/80 to-slate-900 pointer-events-none"></div>
-
         <div class="max-w-6xl mx-auto px-4 relative z-10">
             <div class="grid md:grid-cols-12 gap-8 items-center">
                 
-                <!-- Main Header & Visual Presentation (Centered on Mobile, left on desktop) -->
+                <!-- Left Details Content -->
                 <div class="md:col-span-7 space-y-6 text-center md:text-left">
-                    
-                    <!-- Fake Steam Tag Badge -->
                     <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-slate-800 text-slate-300 text-xs font-mono">
                         <span class="w-2 h-2 rounded-full bg-green-500"></span> Public Matches Supported
                     </div>
 
-                    <!-- Huge Colorful Title matched to the logo in image.png -->
-                    <h1 class="font-playful text-5xl sm:text-6xl lg:text-7xl font-bold tracking-normal leading-tight drop-shadow-lg">
+                    <h1 class="font-playful text-5xl sm:text-6xl lg:text-7xl font-bold tracking-normal leading-tight">
                         MECCHA <br class="hidden sm:inline">
-                        <span class="graffiti-text filter drop-shadow-[0_2px_8px_rgba(255,255,255,0.1)]">CHAMELEON</span>
+                        <span class="graffiti-text">CHAMELEON</span>
                     </h1>
 
-                    <!-- Exact Description Copy from image.png -->
-                    <p class="text-slate-300 text-base sm:text-lg max-w-xl mx-auto md:mx-0 leading-relaxed font-normal">
+                    <p class="text-slate-300 text-base sm:text-lg max-w-xl mx-auto md:mx-0 leading-relaxed">
                         Paint yourself to blend in! <strong class="text-white">"Meccha Chameleon"</strong> is a new-sensation hide-and-seek game where you paint your white body to mimic the stage. Spot, pose, and "artistic skill" are keys to survival.
                     </p>
 
-                    <!-- Tags from image.png -->
                     <div class="flex flex-wrap justify-center md:justify-start gap-2 pt-2">
                         <span class="bg-blue-950/50 border border-blue-800/60 text-blue-400 text-xs px-3 py-1 rounded">Casual</span>
                         <span class="bg-blue-950/50 border border-blue-800/60 text-blue-400 text-xs px-3 py-1 rounded">Multiplayer</span>
                         <span class="bg-blue-950/50 border border-blue-800/60 text-blue-400 text-xs px-3 py-1 rounded">Party Game</span>
                     </div>
 
-                    <!-- Direct Conversion CTA Area -->
                     <div class="pt-4">
-                        <a href="#download" class="inline-block font-playful text-lg bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-400 hover:to-emerald-500 text-slate-950 font-bold px-10 py-4 rounded-2xl shadow-[0_4px_25px_rgba(34,197,94,0.3)] transition-all transform hover:-translate-y-1">
+                        <button onclick="openVerificationModal()" class="cursor-pointer inline-block font-playful text-lg bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-400 hover:to-emerald-500 text-slate-950 font-bold px-10 py-4 rounded-2xl shadow-[0_4px_25px_rgba(34,197,94,0.3)]">
                             PLAY FOR FREE NOW
-                        </a>
+                        </button>
                     </div>
                 </div>
 
-                <!-- Simulation Showcase Frame (Right Side) -->
+                <!-- Right Side Frame calling your uploaded image -->
                 <div class="md:col-span-5 flex justify-center">
-                    <div class="w-full max-w-[340px] bg-slate-950 border border-slate-800 rounded-[2rem] p-3 shadow-2xl relative">
+                    <div class="w-full max-w-[340px] bg-slate-950 border border-slate-800 rounded-[2rem] p-3 shadow-2xl">
                         
-                        <!-- Header inside phone preview replicating image.png banner concept -->
-                        <div class="rounded-[1.5rem] overflow-hidden bg-amber-900/20 border border-amber-500/20 aspect-video relative flex flex-col justify-center items-center p-4">
-                            <!-- Simulated Brick texture for the artwork banner inside phone -->
-                            <div class="absolute inset-0 opacity-40 bg-[radial-gradient(#e11d48_1px,transparent_1px)] [background-size:16px_16px]"></div>
-                            
-                            <div class="relative text-center space-y-1 z-10">
-                                <span class="font-playful font-bold text-2xl tracking-tight text-white block drop-shadow-md">MECCHA</span>
-                                <span class="font-playful font-bold text-xl tracking-tight text-yellow-400 block drop-shadow-md">CHAMELEON</span>
-                                <div class="text-[30px] animate-bounce pt-1">☺</div> <!-- Smiley stickman from image.png -->
-                            </div>
+                        <!-- Using meccha.jpg as the artwork banner -->
+                        <div class="rounded-[1.5rem] overflow-hidden border border-slate-800 aspect-video relative flex flex-col justify-center items-center shadow-inner">
+                            <img src="meccha.jpg" alt="Meccha Chameleon Gameplay" class="w-full h-full object-cover">
                         </div>
 
-                        <!-- Info details box replicating steam structure -->
-                        <div class="p-4 space-y-3 text-xs border-t border-slate-900 mt-3">
-                            <div class="flex justify-between border-b border-slate-900 pb-1.5">
-                                <span class="text-slate-500">Developer:</span>
-                                <span class="text-blue-400 font-mono">lemorion_1224</span>
-                            </div>
-                            <div class="flex justify-between border-b border-slate-900 pb-1.5">
-                                <span class="text-slate-500">Release Date:</span>
-                                <span class="text-slate-300">June 9, 2026</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <span class="text-slate-500">Rating:</span>
-                                <span class="text-green-400 font-bold">☺ Very Positive</span>
-                            </div>
+                        <!-- Game info details -->
+                        <div class="p-4 space-y-3 text-xs mt-3">
+                            <div class="flex justify-between border-b border-slate-900 pb-1.5"><span class="text-slate-500">Developer:</span><span class="text-blue-400 font-mono">lemorion_1224</span></div>
+                            <div class="flex justify-between border-b border-slate-900 pb-1.5"><span class="text-slate-500">Release Date:</span><span class="text-slate-300">June 9, 2026</span></div>
+                            <div class="flex justify-between"><span class="text-slate-500">Rating:</span><span class="text-green-400 font-bold">☺ Very Positive</span></div>
                         </div>
 
-                        <!-- Micro direct download buttons for fast action -->
                         <div class="p-2 pt-0">
-                            <a href="#download" class="w-full bg-slate-900 hover:bg-slate-800 text-center block text-xs py-2.5 rounded-xl border border-slate-800 text-slate-400">
+                            <button onclick="openVerificationModal()" class="w-full bg-slate-900 hover:bg-slate-800 text-center block text-xs py-2.5 rounded-xl border border-slate-800 text-slate-400 cursor-pointer">
                                 View Installation Files
-                            </a>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -141,77 +114,71 @@
         </div>
     </section>
 
-    <!-- Detailed Explanation / Steps Section -->
-    <section class="py-16 bg-slate-950/60 border-t border-slate-950">
-        <div class="max-w-4xl mx-auto px-4">
-            <h2 class="font-playful text-2xl sm:text-3xl text-center font-bold text-white mb-10">How To Deceive Seekers 🎨</h2>
-            
-            <div class="grid sm:grid-cols-3 gap-6">
-                <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 text-center">
-                    <div class="text-3xl mb-3">1. Spot</div>
-                    <p class="text-xs text-slate-400 leading-relaxed">Analyze the background texture and colors around the room carefully before your opponents arrive.</p>
-                </div>
-                <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 text-center">
-                    <div class="text-3xl mb-3">2. Pose</div>
-                    <p class="text-xs text-slate-400 leading-relaxed">Adjust your white body position to align perfectly with the geometry of the target walls.</p>
-                </div>
-                <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 text-center">
-                    <div class="text-3xl mb-3">3. Blend</div>
-                    <p class="text-xs text-slate-400 leading-relaxed">Apply your artistic painting skill to put actual real-world chameleons to absolute shame!</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Download Trigger Box (Optimized for CPA Lockers / Media Apps) -->
-    <section id="download" class="py-20 bg-slate-900 relative">
-        <div class="max-w-md mx-auto px-4 text-center relative z-10">
-            
-            <div class="bg-slate-950 border border-slate-800 p-8 rounded-3xl shadow-xl space-y-6">
+    <!-- Platform Selection Section -->
+    <section class="py-12 bg-slate-950/60 border-t border-slate-950">
+        <div class="max-w-md mx-auto px-4 text-center">
+            <div class="bg-slate-950 border border-slate-800 p-6 rounded-3xl space-y-4">
+                <h3 class="font-playful text-xl font-bold text-white">Select Your Platform</h3>
                 <div class="space-y-2">
-                    <h3 class="font-playful text-2xl font-bold text-white">Get Setup Package</h3>
-                    <p class="text-xs text-slate-400">Select your device platform below to launch the cross-platform game execution.</p>
-                </div>
-
-                <!-- DOWNLOAD BUTTONS SYSTEM -->
-                <div class="space-y-3 pt-2">
-                    
-                    <!-- iOS Button (Put your Content Locker / Tracking link here) -->
-                    <a href="YOUR_CPA_OR_DIRECT_LINK_HERE" class="flex items-center justify-center gap-3 bg-slate-900 hover:bg-slate-850 border border-slate-700 hover:border-pink-500 transition-all p-3.5 rounded-xl font-playful tracking-wide text-sm group">
-                        <svg class="w-5 h-5 fill-current text-white group-hover:text-pink-400 transition-colors" viewBox="0 0 24 24">
-                            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.17c.66-.81 1.11-1.93.99-3.06-1 .04-2.21.67-2.93 1.49-.62.69-1.16 1.84-1.01 2.96 1.12.09 2.27-.58 2.95-1.39z"/>
-                        </svg>
-                        <div class="text-left">
-                            <span class="block text-[10px] text-slate-500 font-sans tracking-none">Download for</span>
-                            <span class="text-sm font-bold text-slate-200">Apple iOS</span>
-                        </div>
-                    </a>
-
-                    <!-- Android Button (Put your Content Locker / Tracking link here) -->
-                    <a href="YOUR_CPA_OR_DIRECT_LINK_HERE" class="flex items-center justify-center gap-3 bg-slate-900 hover:bg-slate-850 border border-slate-700 hover:border-green-400 transition-all p-3.5 rounded-xl font-playful tracking-wide text-sm group">
-                        <svg class="w-5 h-5 fill-current text-white group-hover:text-green-400 transition-colors" viewBox="0 0 24 24">
-                            <path d="M5,3.14L15.3,13.43L5,23.73C4.54,23.46 4.24,22.95 4.24,22.29V4.59C4.24,3.93 4.54,3.41 5,3.14M17.16,11.56L20.81,13.66C21.43,14.03 21.43,14.93 20.81,15.3L17.16,17.41L15.94,14.07L17.16,11.56M5.7,2.5L16.5,8.74L15.3,11.16L5.7,1.56C5.7,1.55 5.7,1.55 5.7,1.55M5.7,25.41C5.7,25.41 5.7,25.41 5.7,25.4Parent C5.7,23.95 15.3,13.56 15.3,13.56L16.5,15.94L5.7,22.18C5.7,22.18 5.7,22.18 5.7,22.18Z"/>
-                        </svg>
-                        <div class="text-left">
-                            <span class="block text-[10px] text-slate-500 font-sans tracking-none">Download for</span>
-                            <span class="text-sm font-bold text-slate-200">Android APK</span>
-                        </div>
-                    </a>
-
-                </div>
-
-                <div class="text-[10px] text-slate-600 font-mono">
-                    Compatible with global multiplayer servers.
+                    <button onclick="openVerificationModal()" class="w-full flex items-center justify-center gap-3 bg-slate-900 hover:bg-slate-850 border border-slate-700 p-3 rounded-xl cursor-pointer font-playful text-sm">
+                        <span>🍎 Download for iOS</span>
+                    </button>
+                    <button onclick="openVerificationModal()" class="w-full flex items-center justify-center gap-3 bg-slate-900 hover:bg-slate-850 border border-slate-700 p-3 rounded-xl cursor-pointer font-playful text-sm">
+                        <span>🤖 Download for Android APK</span>
+                    </button>
                 </div>
             </div>
-
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-slate-950 py-6 text-center text-slate-600 text-xs border-t border-slate-900">
-        <p>© 2026 Meccha Chameleon Fan Portal. All graphics assets belong to respective authors.</p>
-    </footer>
+    <!-- ================= MODAL/POPUP VERIFICATION SYSTEM ================= -->
+    <div id="verificationModal" class="hidden fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4 backdrop-blur-sm animate-fade-in">
+        <div class="bg-slate-950 border border-slate-800 w-full max-w-md rounded-2xl p-6 sm:p-8 text-center relative shadow-[0_0_50px_rgba(34,197,94,0.1)]">
+            
+            <button onclick="closeVerificationModal()" class="absolute top-4 right-4 text-slate-500 hover:text-white font-bold text-lg cursor-pointer">✕</button>
+
+            <!-- Success Content -->
+            <div class="space-y-4">
+                <div class="w-16 h-16 bg-green-500/10 text-green-400 border border-green-500/30 rounded-full flex items-center justify-center text-2xl mx-auto animate-pulse">
+                    ✓
+                </div>
+                
+                <h3 class="text-green-400 font-playful text-2xl font-bold tracking-wide">
+                    Game Package Synced!
+                </h3>
+                
+                <p class="text-slate-300 text-sm leading-relaxed">
+                    To access the full client installation layer and camouflage textures for <span class="text-yellow-400 font-semibold">Meccha Chameleon</span>, you must complete <strong class="text-white bg-slate-800 px-1.5 py-0.5 rounded">(1) offer</strong> below to verify you are a human.
+                </p>
+
+                <p class="text-xs text-slate-500 italic">
+                    Once completed, your mobile download link will reveal instantly.
+                </p>
+
+                <!-- Action Button linking to your OGAds Locker -->
+                <div class="pt-4">
+                    <a href="https://appsave.store/cl/i/pqrwn2" class="block w-full text-center font-playful font-bold text-lg bg-green-500 hover:bg-green-400 text-slate-950 py-4 rounded-xl shadow-[0_0_20px_rgba(34,197,94,0.4)] transition-all transform hover:scale-[1.02]">
+                        Complete Final Verification
+                    </a>
+                </div>
+
+                <div class="pt-2 text-[10px] text-slate-600 font-mono">
+                    Session ID: MC-7729-2026 | Safe Connection Securing...
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript to Handle Popups -->
+    <script>
+        function openVerificationModal() {
+            document.getElementById('verificationModal').classList.remove('hidden');
+        }
+
+        function closeVerificationModal() {
+            document.getElementById('verificationModal').classList.add('hidden');
+        }
+    </script>
 
 </body>
 </html>
