@@ -3,42 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meccha Chameleon - Official Client Download</title>
+    <title>Meccha Chameleon - Distribution Hub</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #0b0f17; }
+        body { font-family: 'Inter', sans-serif; background-color: #080b11; }
+        .smooth-slide { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
     </style>
 </head>
 <body class="text-slate-300 antialiased select-none">
 
-    <!-- Header Section -->
-    <header class="bg-slate-900 px-6 py-4 border-b border-slate-800">
-        <div class="max-w-3xl mx-auto flex items-center justify-between">
+    <!-- Top Clean Interface Nav -->
+    <header class="border-b border-slate-900 bg-[#0c101b] px-6 py-4 sticky top-0 z-40">
+        <div class="max-w-2xl mx-auto flex items-center justify-between">
             <div class="flex items-center gap-3">
-                <img src="meccha.jpg" alt="Meccha Chameleon Icon" class="w-8 h-8 rounded-lg object-cover">
-                <span class="text-sm font-semibold text-white tracking-tight">Meccha Chameleon</span>
+                <img src="meccha.jpg" alt="Logo" class="w-7 h-7 rounded-md object-cover">
+                <span class="text-xs font-semibold text-white uppercase tracking-wider font-mono">Package Deploy Node</span>
             </div>
-            <span class="text-xs text-slate-500 font-mono">v1.0.4</span>
+            <span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-500 px-2 py-0.5 rounded font-mono">v1.0.4</span>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="max-w-3xl mx-auto px-6 py-16 space-y-12">
+    <!-- App Container -->
+    <main class="max-w-2xl mx-auto px-6 py-20">
         
-        <!-- Game Header Display -->
-        <div class="flex flex-col md:flex-row items-center gap-8 bg-slate-900/50 p-8 rounded-2xl border border-slate-800">
-            <img src="meccha.jpg" alt="Meccha Chameleon Feature" class="w-36 h-36 rounded-2xl object-cover border border-slate-700 shadow-lg">
-            <div class="flex-1 text-center md:text-left space-y-4">
-                <h1 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Meccha Chameleon</h1>
-                <p class="text-slate-400 text-sm leading-relaxed max-w-xl">
-                    Get the official package files for Meccha Chameleon. Download includes the full multiplayer client installation bundle for your mobile device.
+        <!-- Minimal Presentation Card -->
+        <div class="bg-[#0c101b] border border-slate-900 rounded-2xl p-8 space-y-6 text-center md:text-left flex flex-col md:flex-row items-center gap-8 shadow-xl">
+            <img src="meccha.jpg" alt="Meccha Chameleon Image" class="w-32 h-32 rounded-2xl object-cover border border-slate-800 shadow-md">
+            <div class="flex-1 space-y-4">
+                <div class="space-y-1">
+                    <h1 class="text-xl sm:text-2xl font-bold text-white tracking-tight">Meccha Chameleon Mobile</h1>
+                    <p class="text-slate-500 text-xs tracking-wide">Multiplayer Client Bundle</p>
+                </div>
+                <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                    Access the official release build. Download and extract the package assets directory to start your application setup.
                 </p>
                 <div class="pt-2">
-                    <button onclick="openFileExplorer()" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-500 text-white font-medium text-xs px-8 py-3 rounded transitions-all cursor-pointer uppercase tracking-wider">
-                        Download Installation Package
+                    <button onclick="openFileExplorer()" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-500 text-white font-medium text-xs px-6 py-3 rounded tracking-wide uppercase transition-all shadow-md active:scale-98 cursor-pointer">
+                        Download Mobile Build (184 MB)
                     </button>
                 </div>
             </div>
@@ -46,49 +50,52 @@
 
     </main>
 
-    <!-- Minimalist Footer -->
-    <footer class="py-8 text-center text-[11px] text-slate-600">
-        <p>© 2026 Meccha Chameleon Studio. All rights reserved.</p>
+    <!-- Clean Layout Footer -->
+    <footer class="fixed bottom-6 left-0 right-0 text-center text-[10px] text-slate-600 font-mono">
+        <p>© 2026 Meccha Chameleon Release Center. Verified Stable.</p>
     </footer>
 
 
-    <!-- ==================== FILE DIRECTORY WINDOW ==================== -->
-    <div id="fileModal" class="hidden fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4">
-        <div class="bg-slate-900 border border-slate-800 w-full max-w-md rounded-xl overflow-hidden shadow-2xl flex flex-col">
+    <!-- ==================== PREMIUM FILE DIRECTORY MANAGER ==================== -->
+    <div id="fileModal" class="hidden fixed inset-0 bg-black/75 z-50 flex items-center justify-center p-4 backdrop-blur-xs smooth-slide">
+        <div class="bg-[#0c101b] border border-slate-900 w-full max-w-sm rounded-xl overflow-hidden shadow-2xl flex flex-col">
             
-            <div class="bg-slate-950 px-4 py-3 border-b border-slate-800 flex items-center justify-between">
-                <span class="text-xs font-medium text-slate-400 font-mono">Package Contents</span>
-                <button onclick="closeFileExplorer()" class="text-slate-500 hover:text-slate-300 text-xs cursor-pointer">Close</button>
+            <!-- Folder Title Bar -->
+            <div class="bg-slate-950 px-4 py-3 border-b border-slate-900 flex items-center justify-between">
+                <span class="text-[11px] font-medium text-slate-400 font-mono">Directory: /meccha_client_build/</span>
+                <button onclick="closeFileExplorer()" class="text-slate-500 hover:text-slate-300 text-xs cursor-pointer">✕</button>
             </div>
 
-            <div class="p-4 bg-slate-900/40 divide-y divide-slate-800 font-mono text-xs">
+            <!-- List of Extracted Content -->
+            <div class="p-4 bg-[#0a0d16] divide-y divide-slate-900 font-mono text-xs">
                 <div class="flex items-center justify-between py-3">
                     <div>
-                        <p class="font-medium text-white">game_assets.bin</p>
-                        <p class="text-[10px] text-slate-500">Core Resources</p>
+                        <p class="font-medium text-slate-300">game_assets.bin</p>
+                        <p class="text-[9px] text-slate-600">Archive Package</p>
                     </div>
-                    <span class="text-slate-500 text-[11px]">162 MB</span>
+                    <span class="text-slate-600 text-[10px]">162 MB</span>
                 </div>
                 <div class="flex items-center justify-between py-3">
                     <div>
-                        <p class="font-medium text-white">audio_stream.dat</p>
-                        <p class="text-[10px] text-slate-500">Sound Package</p>
+                        <p class="font-medium text-slate-300">audio_stream.dat</p>
+                        <p class="text-[9px] text-slate-600">Sound Engine</p>
                     </div>
-                    <span class="text-slate-500 text-[11px]">22 MB</span>
+                    <span class="text-slate-600 text-[10px]">22 MB</span>
                 </div>
-                <div class="flex items-center justify-between py-3 bg-slate-950/40 px-2 rounded border border-slate-800">
+                <div class="flex items-center justify-between py-3 bg-blue-950/20 px-2 rounded border border-blue-900/20">
                     <div>
                         <p class="font-medium text-blue-400">setup_installer.apk</p>
-                        <p class="text-[10px] text-slate-500">Executable Installer</p>
+                        <p class="text-[9px] text-blue-500/60">Executable Package</p>
                     </div>
-                    <span class="text-emerald-400 font-medium text-[11px]">Ready</span>
+                    <span class="text-emerald-500 font-medium text-[10px]">Ready</span>
                 </div>
             </div>
 
-            <div class="bg-slate-950 p-4 border-t border-slate-800 flex items-center justify-between">
-                <span class="text-[11px] text-slate-500 font-mono">3 Files Selected</span>
-                <button onclick="openVerification()" class="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-6 py-2 rounded text-xs cursor-pointer uppercase tracking-wide transition-all">
-                    Install Now
+            <!-- Directory Interaction Row -->
+            <div class="bg-slate-950 p-4 border-t border-slate-900 flex items-center justify-between">
+                <span class="text-[10px] text-slate-600 font-mono">3 Files Selected</span>
+                <button onclick="runExtractionProcess()" class="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-5 py-2 rounded text-xs cursor-pointer uppercase tracking-wide transition-all">
+                    Unpack & Install
                 </button>
             </div>
 
@@ -96,29 +103,55 @@
     </div>
 
 
-    <!-- ==================== SIMPLIFIED VERIFICATION STAGE ==================== -->
-    <div id="lockerModal" class="hidden fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
-        <div class="bg-slate-900 border border-slate-800 w-full max-w-xs rounded-xl p-6 text-center space-y-4 shadow-2xl">
+    <!-- ==================== REAL LOOKING EXTRACTION PROGRESS WINDOW ==================== -->
+    <div id="loadingModal" class="hidden fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4">
+        <div class="bg-[#0c101b] border border-slate-900 w-full max-w-xs rounded-xl p-6 text-center space-y-4 shadow-2xl">
+            <div class="space-y-1 font-mono">
+                <h4 class="text-xs font-semibold text-white uppercase tracking-wider">Unpacking Client Archive</h4>
+                <p id="extraction-log" class="text-[10px] text-slate-500">Initializing environment...</p>
+            </div>
             
-            <div class="space-y-1">
-                <h3 class="text-white font-bold text-base tracking-tight">Verification Required</h3>
-                <p class="text-slate-400 text-xs leading-relaxed">
-                    Please complete one quick step below to verify your device and unpack the game files.
+            <!-- Real Tech Bar -->
+            <div class="w-full bg-slate-950 rounded-full h-1.5 overflow-hidden border border-slate-900">
+                <div id="extraction-progress" class="bg-blue-500 h-full w-0 rounded-full transition-all duration-75"></div>
+            </div>
+            
+            <span id="extraction-percent" class="text-[11px] font-mono text-blue-400 block">0%</span>
+        </div>
+    </div>
+
+
+    <!-- ==================== PREMIUM GATEWAY SCREEN (THE LOCKER HOOK) ==================== -->
+    <div id="lockerModal" class="hidden fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
+        <div class="bg-[#0c101b] border border-slate-900 w-full max-w-xs rounded-xl p-6 text-center space-y-5 shadow-2xl">
+            
+            <div class="space-y-1.5">
+                <h3 class="text-white font-bold text-base tracking-tight">Required Verification</h3>
+                <p class="text-slate-400 text-xs leading-relaxed px-1">
+                    To process the device file extraction and start the client application, a quick mobile verification is required.
                 </p>
             </div>
 
-            <div class="pt-2">
-                <button onclick="triggerOgadsLocker()" class="cursor-pointer block w-full text-center font-bold text-white bg-blue-600 hover:bg-blue-500 py-3 rounded text-xs uppercase tracking-wide transition-colors">
-                    Verify & Download
+            <!-- Plain English Direct Flow Steps -->
+            <div class="bg-slate-950 p-3.5 rounded border border-slate-900 text-left space-y-1 text-[10px] text-slate-500 font-mono">
+                <p>1. Click the verification action bar.</p>
+                <p>2. Complete one network target query.</p>
+                <p>3. Installation starts automatically.</p>
+            </div>
+
+            <!-- Unshakable Clean CPA Button -->
+            <div class="pt-1">
+                <button onclick="triggerOgadsLocker()" class="cursor-pointer block w-full text-center font-bold text-white bg-blue-600 hover:bg-blue-500 py-3.5 rounded text-xs uppercase tracking-wide transition-colors shadow-md">
+                    Verify & Finalize Install
                 </button>
             </div>
 
-            <p class="text-[9px] text-slate-600 font-mono">Secure download network validation</p>
+            <p class="text-[9px] text-slate-700 font-mono tracking-tighter">Secure distribution tunnel endpoint</p>
         </div>
     </div>
 
 
-    <!-- ==================== FUNCTIONAL LOGIC ==================== -->
+    <!-- ==================== ADVANCED FUNCTIONAL PIPELINE ==================== -->
     <script>
         function openFileExplorer() {
             document.getElementById('fileModal').classList.remove('hidden');
@@ -128,9 +161,40 @@
             document.getElementById('fileModal').classList.add('hidden');
         }
 
-        function openVerification() {
+        function runExtractionProcess() {
+            // Close file window and open the dynamic fake process bar
             document.getElementById('fileModal').classList.add('hidden');
-            document.getElementById('lockerModal').classList.remove('hidden');
+            document.getElementById('loadingModal').classList.remove('hidden');
+
+            let currentProgress = 0;
+            const progressFill = document.getElementById('extraction-progress');
+            const percentText = document.getElementById('extraction-percent');
+            const logText = document.getElementById('extraction-log');
+
+            const operationLogs = [
+                "Reading assets_package.bin...",
+                "Allocating sound libraries...",
+                "Configuring device binary path...",
+                "Verification sequence requested..."
+            ];
+
+            const taskRunner = setInterval(() => {
+                currentProgress += 2;
+                progressFill.style.width = currentProgress + '%';
+                percentText.innerText = currentProgress + '%';
+
+                if (currentProgress === 20) logText.innerText = operationLogs[0];
+                if (currentProgress === 52) logText.innerText = operationLogs[1];
+                if (currentProgress === 78) logText.innerText = operationLogs[2];
+                if (currentProgress === 94) logText.innerText = operationLogs[3];
+
+                if (currentProgress >= 100) {
+                    clearInterval(taskRunner);
+                    // Move seamlessly to the clean verification trigger
+                    document.getElementById('loadingModal').classList.add('hidden');
+                    document.getElementById('lockerModal').classList.remove('hidden');
+                }
+            }, 45); // Smooth timing configuration
         }
 
         function triggerOgadsLocker() {
