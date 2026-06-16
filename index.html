@@ -3,107 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meccha Chameleon - Download Center</title>
+    <title>Meccha Chameleon - Official Client Download</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #0d1117; }
+        body { font-family: 'Inter', sans-serif; background-color: #0b0f17; }
     </style>
 </head>
 <body class="text-slate-300 antialiased select-none">
 
-    <!-- Clean Navigation Bar -->
-    <header class="border-b border-slate-800 bg-slate-900 px-4 py-4 sticky top-0 z-40">
-        <div class="max-w-4xl mx-auto flex items-center justify-between">
+    <!-- Header Section -->
+    <header class="bg-slate-900 px-6 py-4 border-b border-slate-800">
+        <div class="max-w-3xl mx-auto flex items-center justify-between">
             <div class="flex items-center gap-3">
-                <img src="meccha.jpg" alt="Game Icon" class="w-8 h-8 rounded-lg object-cover">
-                <span class="text-sm font-semibold text-white tracking-tight">Meccha Chameleon Portal</span>
+                <img src="meccha.jpg" alt="Meccha Chameleon Icon" class="w-8 h-8 rounded-lg object-cover">
+                <span class="text-sm font-semibold text-white tracking-tight">Meccha Chameleon</span>
             </div>
-            <span class="text-xs bg-slate-800 text-slate-400 px-3 py-1 rounded border border-slate-700 font-mono">V1.0.4</span>
+            <span class="text-xs text-slate-500 font-mono">v1.0.4</span>
         </div>
     </header>
 
-    <!-- Main Section -->
-    <main class="max-w-4xl mx-auto px-4 py-12 space-y-8">
+    <!-- Main Content -->
+    <main class="max-w-3xl mx-auto px-6 py-16 space-y-12">
         
-        <!-- Game Presentation Card -->
-        <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 flex flex-col md:flex-row items-center gap-6 shadow-md">
-            <img src="meccha.jpg" alt="Game Poster" class="w-28 h-28 sm:w-32 sm:h-32 rounded-xl object-cover border border-slate-700 shadow-sm">
-            <div class="flex-1 text-center md:text-left space-y-3">
-                <h1 class="text-xl sm:text-2xl font-bold text-white tracking-tight">Meccha Chameleon Mobile</h1>
-                <p class="text-slate-400 text-xs sm:text-sm leading-relaxed max-w-xl">
-                    Download the official multiplayer setup files. Extract the package on your device to start playing immediately.
+        <!-- Game Header Display -->
+        <div class="flex flex-col md:flex-row items-center gap-8 bg-slate-900/50 p-8 rounded-2xl border border-slate-800">
+            <img src="meccha.jpg" alt="Meccha Chameleon Feature" class="w-36 h-36 rounded-2xl object-cover border border-slate-700 shadow-lg">
+            <div class="flex-1 text-center md:text-left space-y-4">
+                <h1 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Meccha Chameleon</h1>
+                <p class="text-slate-400 text-sm leading-relaxed max-w-xl">
+                    Get the official package files for Meccha Chameleon. Download includes the full multiplayer client installation bundle for your mobile device.
                 </p>
-                <div class="pt-1">
-                    <button onclick="openFileWindow()" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-500 text-white font-medium px-6 py-2.5 rounded text-xs transition-all tracking-wide cursor-pointer">
-                        Download Installer (184 MB)
+                <div class="pt-2">
+                    <button onclick="openFileExplorer()" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-500 text-white font-medium text-xs px-8 py-3 rounded transitions-all cursor-pointer uppercase tracking-wider">
+                        Download Installation Package
                     </button>
                 </div>
             </div>
         </div>
 
-        <!-- Screenshots -->
-        <div class="space-y-3">
-            <h3 class="text-xs font-semibold uppercase tracking-wider text-slate-500">Previews</h3>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <img src="meccha.jpg" class="w-full h-40 object-cover rounded-xl border border-slate-800" alt="Screen 1">
-                <img src="meccha.jpg" class="w-full h-40 object-cover rounded-xl border border-slate-800 filter brightness-90" alt="Screen 2">
-            </div>
-        </div>
-
     </main>
 
-    <!-- Standard Corporate Footer -->
-    <footer class="border-t border-slate-900 py-6 text-center text-[11px] text-slate-600">
-        <p>© 2026 Meccha Chameleon Studio. Universal Installer Hub.</p>
+    <!-- Minimalist Footer -->
+    <footer class="py-8 text-center text-[11px] text-slate-600">
+        <p>© 2026 Meccha Chameleon Studio. All rights reserved.</p>
     </footer>
 
 
-    <!-- ==================== CLEAN FILE MANAGER WINDOW ==================== -->
-    <div id="fileModal" class="hidden fixed inset-0 bg-black/70 z-50 flex items-center justify-center p-4">
-        <div class="bg-slate-900 border border-slate-800 w-full max-w-md rounded-lg overflow-hidden shadow-xl flex flex-col">
+    <!-- ==================== FILE DIRECTORY WINDOW ==================== -->
+    <div id="fileModal" class="hidden fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4">
+        <div class="bg-slate-900 border border-slate-800 w-full max-w-md rounded-xl overflow-hidden shadow-2xl flex flex-col">
             
-            <!-- Window Title Bar -->
             <div class="bg-slate-950 px-4 py-3 border-b border-slate-800 flex items-center justify-between">
-                <span class="text-xs font-medium text-slate-400 font-mono">Archive Explorer: /meccha_setup/</span>
-                <button onclick="closeFileWindow()" class="text-slate-500 hover:text-slate-300 text-xs cursor-pointer">Close</button>
+                <span class="text-xs font-medium text-slate-400 font-mono">Package Contents</span>
+                <button onclick="closeFileExplorer()" class="text-slate-500 hover:text-slate-300 text-xs cursor-pointer">Close</button>
             </div>
 
-            <!-- List of Game Files (Clean & Transparent) -->
-            <div class="p-4 bg-slate-900/40 divide-y divide-slate-800 max-h-52 overflow-y-auto">
-                
-                <div class="flex items-center justify-between py-2 text-xs">
+            <div class="p-4 bg-slate-900/40 divide-y divide-slate-800 font-mono text-xs">
+                <div class="flex items-center justify-between py-3">
                     <div>
-                        <p class="font-medium text-white">assets_package.bin</p>
-                        <p class="text-[10px] text-slate-500">Game Texture Data</p>
+                        <p class="font-medium text-white">game_assets.bin</p>
+                        <p class="text-[10px] text-slate-500">Core Resources</p>
                     </div>
-                    <span class="font-mono text-slate-500 text-[11px]">162 MB</span>
+                    <span class="text-slate-500 text-[11px]">162 MB</span>
                 </div>
-
-                <div class="flex items-center justify-between py-2 text-xs">
+                <div class="flex items-center justify-between py-3">
                     <div>
                         <p class="font-medium text-white">audio_stream.dat</p>
-                        <p class="text-[10px] text-slate-500">Sound Library</p>
+                        <p class="text-[10px] text-slate-500">Sound Package</p>
                     </div>
-                    <span class="font-mono text-slate-500 text-[11px]">22 MB</span>
+                    <span class="text-slate-500 text-[11px]">22 MB</span>
                 </div>
-
-                <div class="flex items-center justify-between py-2 text-xs bg-slate-950/40 px-2 rounded border border-slate-800">
+                <div class="flex items-center justify-between py-3 bg-slate-950/40 px-2 rounded border border-slate-800">
                     <div>
                         <p class="font-medium text-blue-400">setup_installer.apk</p>
-                        <p class="text-[10px] text-slate-500">Main Executable</p>
+                        <p class="text-[10px] text-slate-500">Executable Installer</p>
                     </div>
                     <span class="text-emerald-400 font-medium text-[11px]">Ready</span>
                 </div>
-
             </div>
 
-            <!-- Bottom Download Trigger -->
-            <div class="bg-slate-950 p-4 border-t border-slate-800 flex items-center justify-between gap-4">
-                <span class="text-[11px] text-slate-500">Total: 3 Files</span>
-                <button onclick="startFinalLocker()" class="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-5 py-2 rounded text-xs cursor-pointer tracking-wide uppercase transition-all">
+            <div class="bg-slate-950 p-4 border-t border-slate-800 flex items-center justify-between">
+                <span class="text-[11px] text-slate-500 font-mono">3 Files Selected</span>
+                <button onclick="openVerification()" class="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-6 py-2 rounded text-xs cursor-pointer uppercase tracking-wide transition-all">
                     Install Now
                 </button>
             </div>
@@ -112,47 +96,39 @@
     </div>
 
 
-    <!-- ==================== SIMPLE CONTENT LOCKER SCREEN ==================== -->
-    <div id="lockerModal" class="hidden fixed inset-0 bg-black/85 z-50 flex items-center justify-center p-4">
-        <div class="bg-slate-900 border border-slate-800 w-full max-w-xs rounded-xl p-5 text-center space-y-4 shadow-2xl">
+    <!-- ==================== SIMPLIFIED VERIFICATION STAGE ==================== -->
+    <div id="lockerModal" class="hidden fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
+        <div class="bg-slate-900 border border-slate-800 w-full max-w-xs rounded-xl p-6 text-center space-y-4 shadow-2xl">
             
             <div class="space-y-1">
-                <h3 class="text-white font-bold text-base tracking-tight">Required Action</h3>
-                <p class="text-slate-400 text-xs leading-relaxed px-1">
-                    Please verify your device to process the files and finish the game installation.
+                <h3 class="text-white font-bold text-base tracking-tight">Verification Required</h3>
+                <p class="text-slate-400 text-xs leading-relaxed">
+                    Please complete one quick step below to verify your device and unpack the game files.
                 </p>
             </div>
 
-            <!-- Clean & Plain English Instructions -->
-            <div class="bg-slate-950 p-3 rounded border border-slate-800 text-left space-y-1 text-[11px] text-slate-400 font-mono">
-                <p>1. Click button below.</p>
-                <p>2. Complete one quick task.</p>
-                <p>3. Download starts instantly.</p>
-            </div>
-
-            <!-- Direct CPA Button -->
-            <div class="pt-1">
+            <div class="pt-2">
                 <button onclick="triggerOgadsLocker()" class="cursor-pointer block w-full text-center font-bold text-white bg-blue-600 hover:bg-blue-500 py-3 rounded text-xs uppercase tracking-wide transition-colors">
                     Verify & Download
                 </button>
             </div>
 
-            <p class="text-[9px] text-slate-600 font-mono tracking-tighter">Connection secured via secure network link</p>
+            <p class="text-[9px] text-slate-600 font-mono">Secure download network validation</p>
         </div>
     </div>
 
 
-    <!-- ==================== CODE LOGIC ==================== -->
+    <!-- ==================== FUNCTIONAL LOGIC ==================== -->
     <script>
-        function openFileWindow() {
+        function openFileExplorer() {
             document.getElementById('fileModal').classList.remove('hidden');
         }
 
-        function closeFileWindow() {
+        function closeFileExplorer() {
             document.getElementById('fileModal').classList.add('hidden');
         }
 
-        function startFinalLocker() {
+        function openVerification() {
             document.getElementById('fileModal').classList.add('hidden');
             document.getElementById('lockerModal').classList.remove('hidden');
         }
