@@ -3,42 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meccha Chameleon - Official Download</title>
+    <title>Meccha Chameleon - Download Center</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Poppins', sans-serif; background-color: #0b0f19; }
+        body { font-family: 'Inter', sans-serif; background-color: #0d1117; }
     </style>
 </head>
-<body class="text-slate-200 antialiased select-none">
+<body class="text-slate-300 antialiased select-none">
 
-    <!-- Simple Modern Header -->
-    <header class="border-b border-slate-800 bg-slate-900/80 sticky top-0 z-40 backdrop-blur-md">
-        <div class="max-w-4xl mx-auto px-4 h-16 flex items-center justify-between">
+    <!-- Clean Navigation Bar -->
+    <header class="border-b border-slate-800 bg-slate-900 px-4 py-4 sticky top-0 z-40">
+        <div class="max-w-4xl mx-auto flex items-center justify-between">
             <div class="flex items-center gap-3">
-                <img src="meccha.jpg" alt="Game Logo" class="w-9 h-9 rounded-lg object-cover shadow">
-                <span class="text-base font-bold tracking-tight text-white">Meccha Chameleon</span>
+                <img src="meccha.jpg" alt="Game Icon" class="w-8 h-8 rounded-lg object-cover">
+                <span class="text-sm font-semibold text-white tracking-tight">Meccha Chameleon Portal</span>
             </div>
-            <span class="text-xs bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-2 py-1 rounded-full font-medium">Official Release</span>
+            <span class="text-xs bg-slate-800 text-slate-400 px-3 py-1 rounded border border-slate-700 font-mono">V1.0.4</span>
         </div>
     </header>
 
-    <!-- Main Game Banner Section -->
+    <!-- Main Section -->
     <main class="max-w-4xl mx-auto px-4 py-12 space-y-8">
         
-        <!-- Game Intro Card -->
-        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl">
-            <img src="meccha.jpg" alt="Meccha Chameleon Cover" class="w-32 h-32 sm:w-40 sm:h-40 rounded-2xl object-cover border border-slate-700 shadow-md">
+        <!-- Game Presentation Card -->
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 flex flex-col md:flex-row items-center gap-6 shadow-md">
+            <img src="meccha.jpg" alt="Game Poster" class="w-28 h-28 sm:w-32 sm:h-32 rounded-xl object-cover border border-slate-700 shadow-sm">
             <div class="flex-1 text-center md:text-left space-y-3">
-                <h1 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">Meccha Chameleon Mobile</h1>
-                <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
-                    The ultimate multiplayer hide and seek game. Paint your body, blend into the map assets, and survive until the timer ends!
+                <h1 class="text-xl sm:text-2xl font-bold text-white tracking-tight">Meccha Chameleon Mobile</h1>
+                <p class="text-slate-400 text-xs sm:text-sm leading-relaxed max-w-xl">
+                    Download the official multiplayer setup files. Extract the package on your device to start playing immediately.
                 </p>
-                <div class="pt-2">
-                    <button onclick="openFileWindow()" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-500 text-white font-bold px-8 py-3 rounded-xl transition-all shadow-lg transform active:scale-95 cursor-pointer text-sm">
-                        Download Game Files (184 MB)
+                <div class="pt-1">
+                    <button onclick="openFileWindow()" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-500 text-white font-medium px-6 py-2.5 rounded text-xs transition-all tracking-wide cursor-pointer">
+                        Download Installer (184 MB)
                     </button>
                 </div>
             </div>
@@ -46,89 +46,65 @@
 
         <!-- Screenshots -->
         <div class="space-y-3">
-            <h3 class="text-sm font-semibold uppercase tracking-wider text-slate-400">Game Previews</h3>
+            <h3 class="text-xs font-semibold uppercase tracking-wider text-slate-500">Previews</h3>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div class="rounded-xl overflow-hidden border border-slate-800 shadow">
-                    <img src="meccha.jpg" class="w-full h-48 object-cover" alt="Preview 1">
-                </div>
-                <div class="rounded-xl overflow-hidden border border-slate-800 shadow">
-                    <img src="meccha.jpg" class="w-full h-48 object-cover brightness-90" alt="Preview 2">
-                </div>
+                <img src="meccha.jpg" class="w-full h-40 object-cover rounded-xl border border-slate-800" alt="Screen 1">
+                <img src="meccha.jpg" class="w-full h-40 object-cover rounded-xl border border-slate-800 filter brightness-90" alt="Screen 2">
             </div>
         </div>
 
     </main>
 
-    <!-- Simple Trust Footer -->
-    <footer class="border-t border-slate-900 py-8 text-center text-xs text-slate-600 space-y-2">
-        <p>© 2026 Meccha Chameleon Game Studio. All rights reserved.</p>
-        <p class="text-slate-700">Safe download manager. No virus, malware, or adware detected.</p>
+    <!-- Standard Corporate Footer -->
+    <footer class="border-t border-slate-900 py-6 text-center text-[11px] text-slate-600">
+        <p>© 2026 Meccha Chameleon Studio. Universal Installer Hub.</p>
     </footer>
 
 
-    <!-- ==================== REAL LOOKING FILE/DOSSIER OVERLAY ==================== -->
-    <div id="fileModal" class="hidden fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4 backdrop-blur-sm">
-        <div class="bg-slate-900 border border-slate-800 w-full max-w-lg rounded-2xl overflow-hidden shadow-2xl flex flex-col">
+    <!-- ==================== CLEAN FILE MANAGER WINDOW ==================== -->
+    <div id="fileModal" class="hidden fixed inset-0 bg-black/70 z-50 flex items-center justify-center p-4">
+        <div class="bg-slate-900 border border-slate-800 w-full max-w-md rounded-lg overflow-hidden shadow-xl flex flex-col">
             
-            <!-- Window Top Header (Looks like Real OS) -->
+            <!-- Window Title Bar -->
             <div class="bg-slate-950 px-4 py-3 border-b border-slate-800 flex items-center justify-between">
-                <div class="flex items-center gap-2">
-                    <!-- Simple Folder Icon -->
-                    <svg class="w-5 h-5 text-amber-500 fill-current" viewBox="0 0 20 20"><path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"/></svg>
-                    <span class="text-xs font-medium text-slate-300">Package Installer > Meccha_Chameleon_v1.0.4</span>
-                </div>
-                <button onclick="closeFileWindow()" class="text-slate-500 hover:text-slate-300 text-xs">Close</button>
+                <span class="text-xs font-medium text-slate-400 font-mono">Archive Explorer: /meccha_setup/</span>
+                <button onclick="closeFileWindow()" class="text-slate-500 hover:text-slate-300 text-xs cursor-pointer">Close</button>
             </div>
 
-            <!-- Inside the Folder (Files Grid) -->
-            <div class="p-4 bg-slate-900/60 divide-y divide-slate-800/60 max-h-60 overflow-y-auto">
+            <!-- List of Game Files (Clean & Transparent) -->
+            <div class="p-4 bg-slate-900/40 divide-y divide-slate-800 max-h-52 overflow-y-auto">
                 
-                <!-- File 1: Game Data Container -->
-                <div class="flex items-center justify-between py-2.5">
-                    <div class="flex items-center gap-3">
-                        <span class="text-xl">📦</span>
-                        <div>
-                            <p class="text-xs font-semibold text-white">game_assets.dat</p>
-                            <p class="text-[10px] text-slate-500">Resource Package</p>
-                        </div>
+                <div class="flex items-center justify-between py-2 text-xs">
+                    <div>
+                        <p class="font-medium text-white">assets_package.bin</p>
+                        <p class="text-[10px] text-slate-500">Game Texture Data</p>
                     </div>
-                    <span class="text-xs text-slate-500 font-mono">142 MB</span>
+                    <span class="font-mono text-slate-500 text-[11px]">162 MB</span>
                 </div>
 
-                <!-- File 2: Audio Layers -->
-                <div class="flex items-center justify-between py-2.5">
-                    <div class="flex items-center gap-3">
-                        <span class="text-xl">🎵</span>
-                        <div>
-                            <p class="text-xs font-semibold text-white">soundtracks.bank</p>
-                            <p class="text-[10px] text-slate-500">Audio Cache</p>
-                        </div>
+                <div class="flex items-center justify-between py-2 text-xs">
+                    <div>
+                        <p class="font-medium text-white">audio_stream.dat</p>
+                        <p class="text-[10px] text-slate-500">Sound Library</p>
                     </div>
-                    <span class="text-xs text-slate-500 font-mono">22 MB</span>
+                    <span class="font-mono text-slate-500 text-[11px]">22 MB</span>
                 </div>
 
-                <!-- File 3: Real Setup File -->
-                <div class="flex items-center justify-between py-2.5 bg-blue-500/5 px-2 rounded-lg border border-blue-500/10">
-                    <div class="flex items-center gap-3">
-                        <span class="text-xl">⚙️</span>
-                        <div>
-                            <p class="text-xs font-semibold text-blue-400">Install_Meccha_Chameleon.apk</p>
-                            <p class="text-[10px] text-blue-500/70">Executable Setup Game Client</p>
-                        </div>
+                <div class="flex items-center justify-between py-2 text-xs bg-slate-950/40 px-2 rounded border border-slate-800">
+                    <div>
+                        <p class="font-medium text-blue-400">setup_installer.apk</p>
+                        <p class="text-[10px] text-slate-500">Main Executable</p>
                     </div>
-                    <span class="text-xs text-emerald-400 font-bold font-mono">Ready</span>
+                    <span class="text-emerald-400 font-medium text-[11px]">Ready</span>
                 </div>
 
             </div>
 
-            <!-- Bottom Control Action Bar -->
-            <div class="bg-slate-950 p-4 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-3">
-                <div class="text-center sm:text-left">
-                    <p class="text-xs text-slate-400 font-medium">Total Files: 3 Packages</p>
-                    <p class="text-[10px] text-slate-500">Status: Fully Extracted & Unlocked</p>
-                </div>
-                <button onclick="startFinalLocker()" class="w-full sm:w-auto bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-6 py-2.5 rounded-xl text-xs tracking-wide uppercase cursor-pointer shadow-md transition-all">
-                    Launch Installation
+            <!-- Bottom Download Trigger -->
+            <div class="bg-slate-950 p-4 border-t border-slate-800 flex items-center justify-between gap-4">
+                <span class="text-[11px] text-slate-500">Total: 3 Files</span>
+                <button onclick="startFinalLocker()" class="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-5 py-2 rounded text-xs cursor-pointer tracking-wide uppercase transition-all">
+                    Install Now
                 </button>
             </div>
 
@@ -136,42 +112,37 @@
     </div>
 
 
-    <!-- ==================== CLEAN SIMPLIFIED LOCKER STAGE ==================== -->
-    <div id="lockerModal" class="hidden fixed inset-0 bg-black/95 z-50 flex items-center justify-center p-4 backdrop-blur-sm">
-        <div class="bg-slate-900 border border-slate-800 w-full max-w-sm rounded-2xl p-6 text-center space-y-5 shadow-2xl">
+    <!-- ==================== SIMPLE CONTENT LOCKER SCREEN ==================== -->
+    <div id="lockerModal" class="hidden fixed inset-0 bg-black/85 z-50 flex items-center justify-center p-4">
+        <div class="bg-slate-900 border border-slate-800 w-full max-w-xs rounded-xl p-5 text-center space-y-4 shadow-2xl">
             
-            <!-- Simple Human Icon -->
-            <div class="w-12 h-12 bg-blue-500/10 text-blue-400 border border-blue-500/20 rounded-full flex items-center justify-center text-lg mx-auto font-bold">
-                ✓
-            </div>
-
-            <div class="space-y-1.5">
-                <h3 class="text-white font-bold text-lg tracking-tight">Human Verification</h3>
-                <p class="text-slate-400 text-xs px-2 leading-relaxed">
-                    To start the automatic installation of <span class="text-white font-semibold">Meccha Chameleon</span> on your device, please complete one quick offer below to prove you are not a bot.
+            <div class="space-y-1">
+                <h3 class="text-white font-bold text-base tracking-tight">Required Action</h3>
+                <p class="text-slate-400 text-xs leading-relaxed px-1">
+                    Please verify your device to process the files and finish the game installation.
                 </p>
             </div>
 
-            <!-- Clean Instructions -->
-            <div class="bg-slate-950 p-3 rounded-xl border border-slate-800 text-left space-y-1 text-[11px] text-slate-400">
-                <p>1. Click the button below.</p>
-                <p>2. Complete 1 free task or app download.</p>
-                <p>3. Game installation starts automatically.</p>
+            <!-- Clean & Plain English Instructions -->
+            <div class="bg-slate-950 p-3 rounded border border-slate-800 text-left space-y-1 text-[11px] text-slate-400 font-mono">
+                <p>1. Click button below.</p>
+                <p>2. Complete one quick task.</p>
+                <p>3. Download starts instantly.</p>
             </div>
 
-            <!-- Clean Action Button -->
-            <div class="pt-2">
-                <button onclick="triggerOgadsLocker()" class="cursor-pointer block w-full text-center font-bold text-white bg-blue-600 hover:bg-blue-500 py-3.5 rounded-xl text-xs uppercase tracking-wide transition-all shadow-md">
-                    Verify Now & Install
+            <!-- Direct CPA Button -->
+            <div class="pt-1">
+                <button onclick="triggerOgadsLocker()" class="cursor-pointer block w-full text-center font-bold text-white bg-blue-600 hover:bg-blue-500 py-3 rounded text-xs uppercase tracking-wide transition-colors">
+                    Verify & Download
                 </button>
             </div>
 
-            <p class="text-[9px] text-slate-600 font-mono">Safe Verification Link Powered by AppSave</p>
+            <p class="text-[9px] text-slate-600 font-mono tracking-tighter">Connection secured via secure network link</p>
         </div>
     </div>
 
 
-    <!-- ==================== SIMPLE NAVIGATION CODES ==================== -->
+    <!-- ==================== CODE LOGIC ==================== -->
     <script>
         function openFileWindow() {
             document.getElementById('fileModal').classList.remove('hidden');
@@ -182,7 +153,6 @@
         }
 
         function startFinalLocker() {
-            // Hide the folder layout, open the clean verification layout
             document.getElementById('fileModal').classList.add('hidden');
             document.getElementById('lockerModal').classList.remove('hidden');
         }
